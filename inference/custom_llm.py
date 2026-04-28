@@ -225,8 +225,8 @@ class HFCustomLLM:
             model_name_or_path,
             # torch_dtype=torch.bfloat16,
             device_map="auto",
-            output_scores=True,  # ✅ 必须开启，否则不返回 scores
-            return_dict_in_generate=True,  # ✅ 使 generate 返回字典
+            output_scores=True, 
+            return_dict_in_generate=True, 
         )
         if lora_adapter_path: 
             self.model = PeftModel.from_pretrained(self.model, lora_adapter_path)
@@ -277,7 +277,7 @@ class HFCustomLLM:
             )
 
         scores = gen_output.scores  # List[tensor], length == new tokens, each tensor shape: (batch, vocab_size)
-        scores_t = torch.cat(list( sc.unsqueeze(1) for sc in scores ), dim=1)  # (bsz, gen_len, vocab_size) 这里假定了每个instance生成token的长度均相同
+        scores_t = torch.cat(list( sc.unsqueeze(1) for sc in scores ), dim=1)  # (bsz, gen_len, vocab_size)
         logprobs_t = torch.log_softmax(scores_t, dim=-1)
         logprobs_dict_list, cumulative_logprob_list = [], []
         for seq, seq_logprobs in zip(gen_output.sequences, logprobs_t): 
