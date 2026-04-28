@@ -31,7 +31,7 @@ Our checkpoints and data are released at [Google Drive](https://drive.google.com
 
 1. Follow [the preprocessing guideline of CodRED](https://github.com/thunlp/CodRED) to prepare your redis database.
 
-2. Formatting datasets to JSON.
+2. Convert dataset formats to JSON.
     ```bash
     conda activate cdre
     cd train/data/rawdata/

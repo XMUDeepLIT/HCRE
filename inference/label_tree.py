@@ -68,7 +68,12 @@ class LabelTree:
         if label not in self.label2paths:
             print(f'OOD {label = }')
             return None
-        paths = list(map(list, set(map(tuple, self.label2paths[label]))))
+        paths = []
+        for p in self.label2paths[label]: 
+            tuple_p = tuple(p)
+            if tuple_p not in paths:
+                paths.append(tuple_p)
+        paths = list(map(list, paths))  # tuple -> list
         if return_all:
             return paths
         path_idx = random.randint(0, len(paths) - 1)

@@ -26,7 +26,7 @@ def hamming_similarity(word1: str, word2: str) -> float:
     hash1 = Simhash(word1)
     hash2 = Simhash(word2)
     hamming_distance = hash1.distance(hash2)
-    return 1 - hamming_distance / 64  # 64位哈希
+    return 1 - hamming_distance / 64
 
 
 def print_title(s):
@@ -131,76 +131,6 @@ def unify_model_name(client, model_name):
     eds = [ (m_name, hamming_similarity(model_name, m_name)) for m_name in available_model_names ]
     top3_similar_model_name = sorted(eds, key=lambda x: x[1], reverse=True)[:3]
     raise ValueError(f'unknown model name ({model_name}), did you mean {top3_similar_model_name}?')
-
-
-# class RemoteModel:
-
-#     def __init__(self, client, model_name, generation_archive_path):
-#         self.client = client
-#         self.model_name = model_name
-#         self.generation_archive_path = generation_archive_path
-#         self.generation_archive = (
-#             [ json.loads(line.strip()) for line in open(generation_archive_path, encoding='utf-8').readlines() ]
-#             if os.path.exists(generation_archive_path) else []
-#         )
-#         self.generation_recover_idx = 0
-#         self.latest_stats = self.generation_archive[-1] if self.generation_archive else None
-
-#     def _do_predict(self, prompt):
-#         max_retry = 5
-#         exception = None
-#         completion = None
-#         model_name = unify_model_name(self.client, self.model_name)
-#         for i in range(max_retry):
-#             try:
-#                 completion = LiOpenAI().chat.completions.create(
-#                     model=model_name,
-#                     messages=[ { "role": "user", "content": prompt } ], 
-#                     max_tokens=10000, 
-#                     temperature=1.0, 
-#                     # max_completion_tokens=10000, 
-#                 )
-#                 completion = completion.model_dump()
-#                 # import pdb
-#                 # pdb.set_trace()
-#             except Exception as e:
-#                 exception = e
-#                 traceback.print_exc()
-#                 print(f'prompt: \n{prompt}')
-#                 print(f'重试第{i+1}次...(最大重试次数{max_retry}次)', flush=True)
-#                 time.sleep(5)
-#                 continue
-#             break
-#         if completion is None:
-#             raise exception
-#         return completion
-
-#     def recover_or_generate_response(self, prompt):
-#         self.latest_stats = None
-#         if self.generation_recover_idx < len(self.generation_archive):  # recover
-#             self.latest_stats = self.generation_archive[self.generation_recover_idx]
-#             resp = self.latest_stats['response']
-#             self.generation_recover_idx += 1
-#             return resp
-        
-#         # generate
-#         t1 = time.time()
-#         completion = self._do_predict(prompt)
-#         t2 = time.time()
-
-#         resp = completion["choices"][0]['message']['content']
-#         stats = {
-#             'prompt': prompt, 
-#             'response': resp, 
-#             'latency': f'{t2 - t1:.6f}s', 
-#             'model': completion['model'], 
-#             'finish_reason': completion['choices'][0]['finish_reason'], 
-#             'usage': completion['usage'], 
-#         }
-#         with open(self.generation_archive_path, 'a+', encoding='utf-8') as generation_archive_file:
-#             generation_archive_file.write(json.dumps(stats, ensure_ascii=False) + '\n')
-#         self.latest_stats = stats
-#         return resp
 
 
 def robust_json_loads(s: str):

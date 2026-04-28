@@ -22,12 +22,14 @@ from vllm.sampling_params import SamplingParams, BeamSearchParams
 from utils import *
 from prompts import *
 from label_tree import LabelTree
-from custom_llm import CustomLLM
+from custom_llm import CustomLLM, HFCustomLLM
+from trie import PredictTrie
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 DEBUG = False
+BS_OOD_CNT = 0
 MARKER = {}
 
 #### Util Functions ####
@@ -36,6 +38,24 @@ def debug_print(s: str):
     global DEBUG
     if DEBUG:
         print(s)
+
+
+def get_option_score_dict(args, output, serial_number_type, options):
+    # import pdb; pdb.set_trace()
+    snum2score = {}
+    first_logprob_dict = output.logprobs[0]
+    for token_id, logprob in first_logprob_dict.items(): 
+        snum = logprob.decoded_token.strip()
+        snum2score[snum] = logprob.logprob
+    option_score_dict = {}
+    for index, opt in enumerate(options):
+        if serial_number_type == 'uni_special_token':
+            assert MARKER
+            snum = f"<|{MARKER[opt]}|>"
+        else:
+            snum = SERIAL_NUMS[args.serial_num_type][index]
+        option_score_dict[opt] = snum2score.get(snum, -math.inf)
+    return option_score_dict
 
 
 def serialize_opt(index, option):
@@ -78,7 +98,7 @@ def llm_predict(
     reason_chain: List[str], 
     options: List[str], 
     input_params: Dict[str, Union[str, SamplingParams, LoRARequest, AutoTokenizer]],
-) -> str:
+) -> Tuple[str, float]:
     input_prompt = get_prompt(
         args, prompt_type, 
         input_params['eh'], 
@@ -87,14 +107,67 @@ def llm_predict(
         options, 
         reason_chain, 
     )
+    debug_print(f"Prompt: \n{input_prompt}")
     output = llm.generate(
         input_params['template_prefix'] + input_prompt + input_params['template_suffix'], 
         sampling_params=input_params['sampling_params'], 
         lora_request=input_params['lora_request'], 
         use_tqdm=False, 
     )[0].outputs[0]
-    generated_sequence = output.text
-    return generated_sequence
+    generated_sequence = output.text.strip()
+    confidence = output.cumulative_logprob / len(output.logprobs)
+    return generated_sequence, confidence
+
+
+def register_v_predict(
+    llm: CustomLLM, 
+    prompt_type: str, 
+    reason_chain: List[str], 
+    options: List[str], 
+    input_params: Dict[str, Union[str, SamplingParams, LoRARequest, AutoTokenizer]],
+) -> Tuple[str, float]:
+    input_prompt = get_prompt(
+        args, prompt_type, 
+        input_params['eh'], 
+        input_params['et'], 
+        input_params['text'], 
+        options, 
+        reason_chain, 
+    )
+    llm.register_query(
+        input_params['template_prefix'] + input_prompt + input_params['template_suffix'], 
+        sampling_params=input_params['sampling_params'], 
+        lora_request=input_params['lora_request'], 
+    )
+
+
+def llm_trie_predict(
+    llm: CustomLLM, 
+    prompt_type: str, 
+    reason_chain: List[str], 
+    options: List[str], 
+    input_params: Dict[str, Union[str, SamplingParams, LoRARequest, AutoTokenizer]],
+) -> Dict[str, float]: 
+    input_prompt = get_prompt(
+        args, prompt_type, 
+        input_params['eh'], 
+        input_params['et'], 
+        input_params['text'], 
+        options, 
+        reason_chain, 
+    )
+    trie = PredictTrie(input_params['tokenizer'])
+    results = trie.predict(
+        llm=llm, 
+        prompt=input_params['template_prefix'] + input_prompt + input_params['template_suffix'], 
+        labels=options, 
+        method='trie', 
+        llm_generate_config={
+            'sampling_params': input_params['sampling_params'],
+            'lora_request': input_params['lora_request'], 
+        }
+    )
+    return results
 
 #### PLAIN ####
 
@@ -117,12 +190,18 @@ def direct_predict(args, llm, tokenizer, instance, sampling_params, lora_request
         ('invalid relation', 'valid relation'), 
         ('no', 'yes'), 
     ]
-    all_relations = json.load(open('data/rawdata/CodRED/labels.json'))
+    all_relations = (
+        json.load(open('data/rawdata/CodRED/labels.json'))
+        if not args.docred
+        else list(map(lambda x: x['rel_name'], json.load(open('data/rawdata/relations_with_desc-docred.json'))))
+    )
     options = [ ALL_POSSIBLE_NA[args.na_type][0], *all_relations[1:] ]
     if args.num_lrd_options != -1:
+        assert not args.docred  # not implemented
         assert args.num_options is None
         options = list(json.load(open('data/rawdata/rel_sample_priority.json')).keys())[:args.num_lrd_options]
     if args.num_options and args.num_options < 277:
+        assert not args.docred  # not implemented
         assert args.num_lrd_options == -1
 
         rel_objs = json.load(open('data/rawdata/relations_with_desc.json'))
@@ -140,8 +219,12 @@ def direct_predict(args, llm, tokenizer, instance, sampling_params, lora_request
         options = sorted(options, key=lambda r: rel_rank[r])
         # print(f'{options = }\n{label = }')
         # random.shuffle(options)
+    
+    generated, conf = llm_predict(llm, 'plain', [], options, input_params)
 
-    return llm_predict(llm, 'plain', [], options, input_params)
+    agg_rel_dist = None
+    debug_print(f"Response: {generated}")
+    return generated, conf, agg_rel_dist
 
 #### MS ####
 
@@ -154,8 +237,8 @@ def prelimarily_predict(
 ) -> Tuple[str, str, float, float]:
     options = labeltree.children_of(reason_chain)
     if not use_bs: 
-        best_node = llm_predict(llm, 'ms', reason_chain, options, input_params)
-        return best_node, None
+        best_node, best_conf = llm_predict(llm, 'ms', reason_chain, options, input_params)
+        return best_node, None, best_conf, None
 
     input_prompt = get_prompt(
         args, 'ms', 
@@ -176,19 +259,22 @@ def prelimarily_predict(
         lora_request=input_params['lora_request'], 
         skip_special_tokens=True, 
     )[0].sequences
-    generated_nodes = []
+    generated_nodes, confs = [], []
     for output in outputs:
         if output.text in options:
             generated_nodes.append(output.text)
+            confs.append(output.cum_logprob / len(output.logprobs))
     if len(generated_nodes) < 2:
         msg = f"Options: {options}\nValid nodes: {generated_nodes}\nAll output sequences: "
         for i, output in enumerate(outputs):
             msg += f"[{i}]: text={repr(output.text)} tokens={output.tokens[-len(output.logprobs):]}\n"
         warnings.warn(f"Hell no! Unable to get two nodes!\n{msg}")
+        global BS_OOD_CNT; BS_OOD_CNT += 1
         for output in outputs:
-            if output.text not in generated_nodes: 
+            if output.text not in generated_nodes:
                 generated_nodes.append(output.text)
-    return generated_nodes[:2]
+                confs.append(output.cum_logprob / len(output.logprobs))
+    return *generated_nodes[:2], *confs[:2]
 
 
 def verification_predict(
@@ -205,66 +291,115 @@ def verification_predict(
         if sub_nodes and node in new_options:
             node_idx = new_options.index(node)
             new_options = new_options[:node_idx] + sub_nodes + new_options[node_idx+1:]
-    v_pred = llm_predict(llm, 'ms', reason_chain, new_options, input_params)
-    return v_pred
+    register_v_predict(llm, 'ms', reason_chain, new_options, input_params)
 
 
-def best_verify(llm, labeltree, reason_chain, best_node, suboptimal_node, input_params) -> bool:
-    original_options = labeltree.children_of(reason_chain)
-    if best_node not in original_options:  # OOD
-        debug_print(f"best_verify: OOD\n\t{best_node = }\n\t{original_options = }")
-        return False
-    sub = labeltree.children_of(reason_chain + [best_node])
-    if sub == []: 
-        return True
-    v_pred = verification_predict(llm, labeltree, reason_chain, [best_node], original_options, input_params)
-    v_res = v_pred in sub
-    return v_res
+class VerifyMethod:
+
+    def __init__(self, llm, labeltree, reason_chain, best_node, suboptimal_node, input_params):
+        self.llm = llm
+        self.labeltree = labeltree
+        self.reason_chain = reason_chain
+        self.best_node = best_node
+        self.suboptimal_node = suboptimal_node
+        self.input_params = input_params
+
+    def register_verification(self, ):
+        raise NotImplementedError("Implement the method in subclasses. ")
+    
+    def verify_pred(self, v_pred):
+        raise NotImplementedError("Implement the method in subclasses. ")
 
 
-def suboptimal_verify(llm, labeltree, reason_chain, best_node, suboptimal_node, input_params) -> bool:
-    original_options = labeltree.children_of(reason_chain)
-    if best_node not in original_options:  # OOD
-        debug_print(f"suboptimal_verify: OOD\n\t{best_node = }\n\t{suboptimal_node = }\n\t{original_options = }")
-        return False
-    if suboptimal_node not in original_options: 
-        return True
-    sub = labeltree.children_of(reason_chain + [suboptimal_node])
-    if sub == []: 
-        return True
-    v_pred = verification_predict(llm, labeltree, reason_chain, [suboptimal_node], original_options, input_params)
-    v_res = v_pred == best_node
-    return v_res
+class BestVerify(VerifyMethod):
+
+    def register_verification(self, ):
+        labeltree = self.labeltree
+        reason_chain = self.reason_chain
+        best_node = self.best_node
+        original_options = labeltree.children_of(reason_chain)
+        if best_node not in original_options:  # OOD
+            debug_print(f"best_verify: OOD\n\t{best_node = }\n\t{original_options = }")
+            return False
+        sub = labeltree.children_of(reason_chain + [best_node])
+        if sub == []: 
+            return True
+        verification_predict(self.llm, labeltree, reason_chain, [best_node], original_options, self.input_params)
+        self.sub = sub
+    
+    def verify_pred(self, v_pred):
+        return v_pred in self.sub
 
 
-def double_verify(llm, labeltree, reason_chain, best_node, suboptimal_node, input_params) -> bool:
-    original_options = labeltree.children_of(reason_chain)
-    if best_node not in original_options:  # OOD
-        debug_print(f"double_verify: OOD\n\t{best_node = }\n\t{suboptimal_node = }\n\t{original_options = }")
-        return False
-    bsub = labeltree.children_of(reason_chain + [best_node])
-    ssub = labeltree.children_of(reason_chain + [suboptimal_node])
-    if bsub == [] and ssub == []:
-        return True
-    v_pred = verification_predict(llm, labeltree, reason_chain, [best_node, suboptimal_node], original_options, input_params)
-    v_res = v_pred in bsub
-    return v_res
+class SuboptimalVerify(VerifyMethod):
+
+    def register_verification(self, ):
+        labeltree = self.labeltree
+        reason_chain = self.reason_chain
+        best_node = self.best_node
+        suboptimal_node = self.suboptimal_node
+        original_options = labeltree.children_of(reason_chain)
+        if best_node not in original_options:  # OOD
+            debug_print(f"suboptimal_verify: OOD\n\t{best_node = }\n\t{suboptimal_node = }\n\t{original_options = }")
+            return False
+        if suboptimal_node not in original_options: 
+            return True
+        sub = labeltree.children_of(reason_chain + [suboptimal_node])
+        if sub == []: 
+            return True
+        verification_predict(self.llm, labeltree, reason_chain, [suboptimal_node], original_options, self.input_params)
+    
+    def verify_pred(self, v_pred):
+        return v_pred == self.best_node
+    
+
+class DoubleVerify(VerifyMethod):
+
+    def register_verification(self, ):
+        labeltree = self.labeltree
+        reason_chain = self.reason_chain
+        best_node = self.best_node
+        suboptimal_node = self.suboptimal_node
+        original_options = labeltree.children_of(reason_chain)
+        if best_node not in original_options:  # OOD
+            debug_print(f"double_verify: OOD\n\t{best_node = }\n\t{suboptimal_node = }\n\t{original_options = }")
+            return False
+        bsub = labeltree.children_of(reason_chain + [best_node])
+        ssub = labeltree.children_of(reason_chain + [suboptimal_node])
+        if bsub == [] and ssub == []:
+            return True
+        verification_predict(self.llm, labeltree, reason_chain, [best_node, suboptimal_node], original_options, self.input_params)
+        self.bsub = bsub
+        
+    def verify_pred(self, v_pred):
+        return v_pred in self.bsub
 
 
 def do_verify(args, llm, labeltree, reason_chain, best_node, suboptimal_node, input_params) -> bool:
     if not args.verification_methods:
         return True
-    VERIFICATION_FUNCS = {
-        'best': best_verify, 
-        'suboptimal': suboptimal_verify, 
-        'double': double_verify, 
+    
+    VERIFICATION_METHODS: Dict[str, VerifyMethod] = {
+        'best': BestVerify, 
+        'suboptimal': SuboptimalVerify, 
+        'double': DoubleVerify, 
     }
-    v_results = []
-    for v_func_id in args.verification_methods:
-        if v_func_id not in VERIFICATION_FUNCS:
-            raise ValueError(f"Invalid Verfication Func ID. Only support: {list(VERIFICATION_FUNCS.keys())}")
-        v_results.append(VERIFICATION_FUNCS[v_func_id](llm, labeltree, reason_chain, best_node, suboptimal_node, input_params))
-        
+    v_methods, v_results = [], []
+    for v_method_id in args.verification_methods:
+        if v_method_id not in VERIFICATION_METHODS:
+            raise ValueError(f"Invalid Verfication Func ID. Only support: {list(VERIFICATION_METHODS.keys())}")
+        v_method = VERIFICATION_METHODS[v_method_id](llm, labeltree, reason_chain, best_node, suboptimal_node, input_params)
+        v_results.append(v_method.register_verification())
+        v_methods.append(v_method)
+
+    outputs = llm.run_all_queries()
+    j = 0
+    for idx, (v_method, v_res) in enumerate(zip(v_methods, v_results)):
+        if v_res is None: 
+            v_pred = outputs[j].outputs[0].text.strip()
+            v_results[idx] = v_method.verify_pred(v_pred)
+            j += 1
+    
     assert len(v_results) % 2 == 1
     return sum(v_results) > len(v_results) / 2
 
@@ -284,8 +419,9 @@ def multi_step_predict(args, llm, tokenizer, instance, sampling_params, lora_req
         'tokenizer': tokenizer, 
     }
 
-    reason_chain = [], []
+    reason_chain, reason_confs = [], []
     total_steps = labeltree.max_depth
+    prompts_for_cls = []
     for step in range(total_steps):  # 4 steps in total
         options = labeltree.children_of(reason_chain)
         original_options = options.copy()
@@ -299,7 +435,7 @@ def multi_step_predict(args, llm, tokenizer, instance, sampling_params, lora_req
                 best_node = options[0]
                 break
 
-            best_node, secondbest_node = prelimarily_predict(
+            best_node, secondbest_node, best_node_conf, secondbest_node_conf = prelimarily_predict(
                 llm, labeltree, reason_chain, input_params, 
                 use_bs=(args.suboptimal_node_type == 'bs' and args.verification_methods != ['best'])
             )
@@ -314,22 +450,24 @@ def multi_step_predict(args, llm, tokenizer, instance, sampling_params, lora_req
                 suboptimal_node = None
             else:
                 raise ValueError(f"Invalid suboptimal_node_type={args.suboptimal_node_type}, only support bs/random/edit/None")
-
+            
             v_pass = do_verify(args, llm, labeltree, reason_chain, best_node, suboptimal_node, input_params)
-            if ptv_cnt > 10:
+            if ptv_cnt > 3: 
                 break
             if not v_pass and best_node in options:
                 options.remove(best_node)
 
         reason_chain.append(best_node)
+        reason_confs.append(best_node_conf)
 
         if best_node not in original_options:  # OOD node
             break
 
         if best_node == labeltree.na_node:
             break
-
-    return ' -> '.join(reason_chain)
+    
+    agg_rel_dist = None
+    return ' -> '.join(reason_chain), mean(reason_confs), agg_rel_dist
 
 
 def worker(kwargs):
@@ -337,33 +475,53 @@ def worker(kwargs):
         # args
         args = kwargs['args']
         data = kwargs['data']
-        if DEBUG:
-            data = random.sample(
-                [d for d in kwargs['data'] if d['label'] != 'n/a'], 
-                k=50
-            ) + random.sample(
-                [d for d in kwargs['data'] if d['label'] == 'n/a'], 
-                k=50
-            )
         device = kwargs['device']
-
+        if DEBUG:
+            if args.docred: 
+                data = random.sample(
+                    [d for d in kwargs['data'] if d['label'] != ['no valid relation']], 
+                    k=50
+                ) + random.sample(
+                    [d for d in kwargs['data'] if d['label'] == ['no valid relation']], 
+                    k=50
+                )
+            else: 
+                data = random.sample(
+                    [d for d in kwargs['data'] if d['label'] != 'n/a'], 
+                    k=50
+                ) + random.sample(
+                    [d for d in kwargs['data'] if d['label'] == 'n/a'], 
+                    k=50
+                )
+        
         # envs
         os.environ['CUDA_VISIBLE_DEVICES'] = device
 
         # prepare model and generation config
-        llm = CustomLLM(
-            seed=args.seed,
-            model=args.model_name_or_path, 
-            trust_remote_code=True, 
-            tensor_parallel_size=1, 
-            gpu_memory_utilization=0.8, 
-            max_model_len=args.cutoff_len, 
-            enforce_eager=False,
-            enable_lora=bool(args.lora_adapter_path),
-            max_lora_rank=64,
-            enable_prefix_caching=True, 
-        )
+        if args.model_backend == 'vllm': 
+            additional_kwargs = {}
+            llm = CustomLLM(
+                seed=args.seed,
+                model=args.model_name_or_path, 
+                trust_remote_code=True, 
+                tensor_parallel_size=1, 
+                gpu_memory_utilization=0.8, 
+                max_model_len=args.cutoff_len, 
+                enforce_eager=False,
+                enable_lora=bool(args.lora_adapter_path),
+                max_lora_rank=64,
+                enable_prefix_caching=True, 
+                **additional_kwargs, 
+            )
+        elif args.model_backend == 'hf': 
+            llm = HFCustomLLM(
+                model_name_or_path=args.model_name_or_path, 
+                lora_adapter_path=args.lora_adapter_path, 
+            )
+        else:
+            raise NotImplementedError(f"Invalid model_backend = {args.modelbackend}, must be one of hf/vllm")
         sampling_params = SamplingParams(
+            seed=args.seed, 
             temperature=args.temperature, 
             top_p=args.top_p, 
             max_tokens=args.max_new_tokens, 
@@ -384,22 +542,34 @@ def worker(kwargs):
 
         # do generate!
         preds = []
+        dump_idx = 0
         for i, entry in enumerate(tqdm(data, desc=f'Running inference on gpu {device}')):
             t1 = time.time()
-            pred = inference_one_instance(instance=entry)
+            pred, logprob, agg_rel_dist = inference_one_instance(instance=entry)
             # if DEBUG: import pdb; pdb.set_trace()
             t2 = time.time()
             preds.append({
                 **entry,  # id, eh, et, context, label
                 "predict": pred, 
+                "confidence": logprob, 
+                "h_dist": [ agg_rel_dist ], 
                 "latency": t2 - t1, 
             })
+            if args.debug:
+                input()
+            if len(preds) > len(data) // 10:
+                logger.info(f"Dumping temp predictions to disks to avoid OOM...")
+                json.dump(preds, open(f"{args.output_dir}/{device}.temp_preds.{dump_idx}.json", 'w'))
+                dump_idx += 1
+                del preds
+                preds = []
         torch.cuda.empty_cache()
+        json.dump(llm.stats, open(f"{args.output_dir}/{device}.stat{'-debug' if args.debug else ''}.json", 'w'))
         return preds
     except:
         import traceback
         err_msg = traceback.format_exc()
-        with open(f"{args.output_dir}/eval.GPU{device}.err", 'w', encoding='utf-8') as f:
+        with open(f"{args.output_dir}/eval.GPU{device}{'-debug' if args.debug else ''}.err", 'w', encoding='utf-8') as f:
             f.write(err_msg)
 
 
@@ -425,11 +595,27 @@ def main(args):
             if not DEBUG else [ worker(worker_arguments[0]) ]
         )
 
+    has_error = False
+    try: 
+        for f in os.listdir(args.output_dir):
+            if bool(re.match(r'^\d+\.temp_preds\.\d+\.json$', f)):
+                tmp = json.load(open(os.path.join(args.output_dir, f)))
+                all_preds.append(tmp)
+                del tmp
+    except Exception as e:
+        import traceback; traceback.print_exc()
+        has_error = True
+
     all_preds = sorted(reduce(lambda x, y: x+y, all_preds, []), key=lambda p: p['id'])
     logger.debug(f'{len(all_preds) = }')
-    with open(f"{args.output_dir}/generated_predictions.jsonl", "w", encoding="utf-8") as f_pred:
+    with open(f"{args.output_dir}/generated_predictions{'-debug' if args.debug else ''}.jsonl", "w", encoding="utf-8") as f_pred:
         for entry in all_preds:
             f_pred.write(json.dumps(entry) + "\n")
+
+    if not has_error:
+        for f in os.listdir(args.output_dir): 
+            if bool(re.match(r'^\d+\.temp_preds\.\d+\.json$', f)):
+                os.remove(os.path.join(args.output_dir, f))
 
 
 if __name__ == "__main__":
@@ -444,8 +630,8 @@ if __name__ == "__main__":
     if args.num_options:
         assert not args.multistep_gen, f'option reduction experiments must be done in directly predict setting. '
         assert args.num_lrd_options == -1, f'label reduction data and label reduction cannot be applied at the same time. '
-    # assert not (bool(args.verification_methods) ^ bool(args.suboptimal_node_type)), \
-    #     "verification_methods and suboptimal_node_type must be set or unset at the same time"
+    assert not (bool(args.verification_methods) ^ bool(args.suboptimal_node_type)), \
+        "verification_methods and suboptimal_node_type must be set or unset at the same time"
     
     # args post-processing
     args.output_dir = os.path.realpath(args.output_dir)
@@ -473,8 +659,12 @@ if __name__ == "__main__":
 
     # prepare checkpoints if new special tokens are added
     if args.serial_num_type and 'special_token' in args.serial_num_type:
-        logger.warning('This branch is deperecated, please unset `serial_num_type`.')
-        exit(1)
+        logger.info('Start parsing checkpoints before model loading...')
+        args.model_name_or_path, args.lora_adapter_path = parse_checkpoint(
+            pretrained_model_dir=args.model_name_or_path, 
+            adapter_dir=args.lora_adapter_path, 
+            target_dir=os.path.join(args.output_dir, 'merged_checkpoints'), 
+        )
 
     set_seed(args.seed)
 
@@ -483,3 +673,4 @@ if __name__ == "__main__":
     end_time = time.time()
     logger.info(f'Consuming time: {end_time - start_time}s')
 
+    print(f"{BS_OOD_CNT = }")

@@ -135,6 +135,7 @@ def add_args(parser):
     ## serial_num exp
     parser.add_argument('--serial_num_type', type=str, choices=['letter', 'number', 'roman', 'special_token', 'uni_special_token'], default=None)
     parser.add_argument('--marker_name', type=str, default=None)  # required only if serial_num_type == 'uni_special_token'
+    parser.add_argument('--docred', action="store_true", default=False)
     return parser
 
 
