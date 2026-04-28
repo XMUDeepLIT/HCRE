@@ -1,0 +1,31 @@
+{
+  "Entity Relationships": {
+    "Personal Relationships": [
+        "relative",
+        "father",
+        "sibling",
+        "stepparent",
+        "unmarried partner"
+    ], 
+    "Political Relationships": [
+      "member of political party",
+      "political alignment",
+      "political ideology",
+      "allegiance"
+    ]
+  },
+  "Organizational Relationships": {
+    "Founding/Ownership": [
+      "founded by",
+      "owned by",
+      "parent organization",
+      "has subsidiary"
+    ],
+    "Affiliations": [
+      "member of",
+      "affiliation",
+      "participant in",
+      "political alignment"
+    ]
+  }
+}

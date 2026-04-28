@@ -1,0 +1,1383 @@
+[
+    {
+        "name": "invalid relation"
+    },
+    {
+        "name": "valid relation",
+        "children": [
+            {
+                "name": "personal relation",
+                "children": [
+                    {
+                        "name": "family relation",
+                        "children": [
+                            {
+                                "name": "relative"
+                            },
+                            {
+                                "name": "child"
+                            },
+                            {
+                                "name": "stepparent"
+                            },
+                            {
+                                "name": "unmarried partner"
+                            },
+                            {
+                                "name": "father"
+                            },
+                            {
+                                "name": "family"
+                            },
+                            {
+                                "name": "gens"
+                            },
+                            {
+                                "name": "spouse"
+                            },
+                            {
+                                "name": "sibling"
+                            },
+                            {
+                                "name": "mother"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "educational background",
+                        "children": [
+                            {
+                                "name": "academic degree"
+                            },
+                            {
+                                "name": "doctoral advisor"
+                            },
+                            {
+                                "name": "educated at"
+                            },
+                            {
+                                "name": "student of"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "occupations and careers",
+                        "children": [
+                            {
+                                "name": "member of the crew of"
+                            },
+                            {
+                                "name": "field of work"
+                            },
+                            {
+                                "name": "employer"
+                            },
+                            {
+                                "name": "member of sports team"
+                            },
+                            {
+                                "name": "position held"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "personal attributes",
+                        "children": [
+                            {
+                                "name": "political alignment"
+                            },
+                            {
+                                "name": "movement"
+                            },
+                            {
+                                "name": "instrument"
+                            },
+                            {
+                                "name": "religion or worldview"
+                            },
+                            {
+                                "name": "political ideology"
+                            },
+                            {
+                                "name": "intended public"
+                            },
+                            {
+                                "name": "honorific prefix"
+                            },
+                            {
+                                "name": "cause of death"
+                            },
+                            {
+                                "name": "influenced by"
+                            },
+                            {
+                                "name": "convicted of"
+                            },
+                            {
+                                "name": "significant person"
+                            },
+                            {
+                                "name": "title of chess person"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "residences and places",
+                        "children": [
+                            {
+                                "name": "residence"
+                            },
+                            {
+                                "name": "work location"
+                            },
+                            {
+                                "name": "place of death"
+                            },
+                            {
+                                "name": "place of birth"
+                            },
+                            {
+                                "name": "significant place"
+                            },
+                            {
+                                "name": "archives at"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "online presence",
+                        "children": [
+                            {
+                                "name": "website account on"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "organizational relation",
+                "children": [
+                    {
+                        "name": "leadership and management",
+                        "children": [
+                            {
+                                "name": "chief executive officer"
+                            },
+                            {
+                                "name": "head coach"
+                            },
+                            {
+                                "name": "chairperson"
+                            },
+                            {
+                                "name": "commanded by"
+                            },
+                            {
+                                "name": "board member"
+                            },
+                            {
+                                "name": "organization directed by the office or position"
+                            },
+                            {
+                                "name": "director / manager"
+                            },
+                            {
+                                "name": "operator"
+                            },
+                            {
+                                "name": "position held"
+                            },
+                            {
+                                "name": "commander of (DEPRECATED)"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "affiliations and memberships",
+                        "children": [
+                            {
+                                "name": "member of political party"
+                            },
+                            {
+                                "name": "league level below"
+                            },
+                            {
+                                "name": "league level above"
+                            },
+                            {
+                                "name": "employer"
+                            },
+                            {
+                                "name": "member of"
+                            },
+                            {
+                                "name": "home venue"
+                            },
+                            {
+                                "name": "family"
+                            },
+                            {
+                                "name": "partner in business or sport"
+                            },
+                            {
+                                "name": "airline alliance"
+                            },
+                            {
+                                "name": "league"
+                            },
+                            {
+                                "name": "affiliation"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "products and services",
+                        "children": [
+                            {
+                                "name": "conferred by"
+                            },
+                            {
+                                "name": "brand"
+                            },
+                            {
+                                "name": "used by"
+                            },
+                            {
+                                "name": "kit supplier"
+                            },
+                            {
+                                "name": "has part(s)"
+                            },
+                            {
+                                "name": "maintained by"
+                            },
+                            {
+                                "name": "introduced feature"
+                            },
+                            {
+                                "name": "item operated"
+                            },
+                            {
+                                "name": "intended public"
+                            },
+                            {
+                                "name": "developer"
+                            },
+                            {
+                                "name": "powered by"
+                            },
+                            {
+                                "name": "has use"
+                            },
+                            {
+                                "name": "product or material produced or service provided"
+                            },
+                            {
+                                "name": "manufacturer"
+                            },
+                            {
+                                "name": "producer"
+                            },
+                            {
+                                "name": "product certification"
+                            },
+                            {
+                                "name": "uses"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "founding and ownership",
+                        "children": [
+                            {
+                                "name": "owned by"
+                            },
+                            {
+                                "name": "parent organization"
+                            },
+                            {
+                                "name": "founded by"
+                            },
+                            {
+                                "name": "main building contractor"
+                            },
+                            {
+                                "name": "has subsidiary"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "partnerships and alliances",
+                        "children": [
+                            {
+                                "name": "launch contractor"
+                            },
+                            {
+                                "name": "sponsor"
+                            },
+                            {
+                                "name": "main building contractor"
+                            },
+                            {
+                                "name": "airline alliance"
+                            },
+                            {
+                                "name": "kit supplier"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "industry and sector",
+                        "children": [
+                            {
+                                "name": "field of this occupation"
+                            },
+                            {
+                                "name": "business division"
+                            },
+                            {
+                                "name": "industry"
+                            },
+                            {
+                                "name": "field of work"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "online presence",
+                        "children": [
+                            {
+                                "name": "website account on"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "geographical and location relation",
+                "children": [
+                    {
+                        "name": "physical locations",
+                        "children": [
+                            {
+                                "name": "operating area"
+                            },
+                            {
+                                "name": "located in protected area"
+                            },
+                            {
+                                "name": "location"
+                            },
+                            {
+                                "name": "location of formation"
+                            },
+                            {
+                                "name": "place of death"
+                            },
+                            {
+                                "name": "start point"
+                            },
+                            {
+                                "name": "headquarters location"
+                            },
+                            {
+                                "name": "place of burial"
+                            },
+                            {
+                                "name": "located in or next to body of water"
+                            },
+                            {
+                                "name": "continent"
+                            },
+                            {
+                                "name": "work location"
+                            },
+                            {
+                                "name": "located in/on physical feature"
+                            },
+                            {
+                                "name": "located in the administrative territorial entity"
+                            },
+                            {
+                                "name": "location of creation"
+                            },
+                            {
+                                "name": "residence"
+                            },
+                            {
+                                "name": "drainage basin"
+                            },
+                            {
+                                "name": "mountain range"
+                            },
+                            {
+                                "name": "place of birth"
+                            },
+                            {
+                                "name": "mouth of the watercourse"
+                            },
+                            {
+                                "name": "destination point"
+                            },
+                            {
+                                "name": "basin country"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "administrative divisions",
+                        "children": [
+                            {
+                                "name": "contains the administrative territorial entity"
+                            },
+                            {
+                                "name": "capital"
+                            },
+                            {
+                                "name": "twinned administrative body"
+                            },
+                            {
+                                "name": "country for sport"
+                            },
+                            {
+                                "name": "country"
+                            },
+                            {
+                                "name": "territory claimed by"
+                            },
+                            {
+                                "name": "applies to jurisdiction"
+                            },
+                            {
+                                "name": "basic form of government"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "transportation and infrastructure",
+                        "children": [
+                            {
+                                "name": "place served by transport hub"
+                            },
+                            {
+                                "name": "connects with"
+                            },
+                            {
+                                "name": "scheduled service destination"
+                            },
+                            {
+                                "name": "adjacent station"
+                            },
+                            {
+                                "name": "location of landing"
+                            },
+                            {
+                                "name": "railway traffic side"
+                            },
+                            {
+                                "name": "connecting service"
+                            },
+                            {
+                                "name": "home venue"
+                            },
+                            {
+                                "name": "driving side"
+                            },
+                            {
+                                "name": "airline hub"
+                            },
+                            {
+                                "name": "crosses"
+                            },
+                            {
+                                "name": "terminus"
+                            },
+                            {
+                                "name": "transport network"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "natural features",
+                        "children": [
+                            {
+                                "name": "tributary"
+                            },
+                            {
+                                "name": "found in taxon"
+                            },
+                            {
+                                "name": "drainage basin"
+                            },
+                            {
+                                "name": "located in/on physical feature"
+                            },
+                            {
+                                "name": "highest point"
+                            },
+                            {
+                                "name": "Köppen climate classification"
+                            },
+                            {
+                                "name": "parent peak"
+                            },
+                            {
+                                "name": "indigenous to"
+                            },
+                            {
+                                "name": "species kept"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "fictional and narrative locations",
+                        "children": [
+                            {
+                                "name": "from narrative universe"
+                            },
+                            {
+                                "name": "takes place in fictional universe"
+                            },
+                            {
+                                "name": "fictional universe described in"
+                            },
+                            {
+                                "name": "present in work"
+                            },
+                            {
+                                "name": "narrative location"
+                            },
+                            {
+                                "name": "set in period"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "time zones",
+                        "children": [
+                            {
+                                "name": "located in time zone"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "creative works and media",
+                "children": [
+                    {
+                        "name": "authorship and creation",
+                        "children": [
+                            {
+                                "name": "designed by"
+                            },
+                            {
+                                "name": "contributor to the creative work or subject"
+                            },
+                            {
+                                "name": "animator"
+                            },
+                            {
+                                "name": "screenwriter"
+                            },
+                            {
+                                "name": "director"
+                            },
+                            {
+                                "name": "composer"
+                            },
+                            {
+                                "name": "lyrics by"
+                            },
+                            {
+                                "name": "creator"
+                            },
+                            {
+                                "name": "author"
+                            },
+                            {
+                                "name": "executive producer"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "production and distribution",
+                        "children": [
+                            {
+                                "name": "distributed by"
+                            },
+                            {
+                                "name": "publisher"
+                            },
+                            {
+                                "name": "published in"
+                            },
+                            {
+                                "name": "original broadcaster"
+                            },
+                            {
+                                "name": "production company"
+                            },
+                            {
+                                "name": "filming location"
+                            },
+                            {
+                                "name": "record label"
+                            },
+                            {
+                                "name": "recorded at studio or venue"
+                            },
+                            {
+                                "name": "place of publication"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "content and subject matter",
+                        "children": [
+                            {
+                                "name": "genre"
+                            },
+                            {
+                                "name": "inspired by"
+                            },
+                            {
+                                "name": "tracklist"
+                            },
+                            {
+                                "name": "cites work"
+                            },
+                            {
+                                "name": "influenced by"
+                            },
+                            {
+                                "name": "depicts"
+                            },
+                            {
+                                "name": "main subject"
+                            },
+                            {
+                                "name": "narrative location"
+                            },
+                            {
+                                "name": "present in work"
+                            },
+                            {
+                                "name": "based on"
+                            },
+                            {
+                                "name": "set in period"
+                            },
+                            {
+                                "name": "after a work by"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "participants and characters",
+                        "children": [
+                            {
+                                "name": "voice actor"
+                            },
+                            {
+                                "name": "characters"
+                            },
+                            {
+                                "name": "participant"
+                            },
+                            {
+                                "name": "cast member"
+                            },
+                            {
+                                "name": "sidekick of"
+                            },
+                            {
+                                "name": "significant person"
+                            },
+                            {
+                                "name": "performer"
+                            },
+                            {
+                                "name": "enemy"
+                            },
+                            {
+                                "name": "participant in"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "versions and editions",
+                        "children": [
+                            {
+                                "name": "has part(s) of the class"
+                            },
+                            {
+                                "name": "edition or translation of"
+                            },
+                            {
+                                "name": "has part(s)"
+                            },
+                            {
+                                "name": "followed by"
+                            },
+                            {
+                                "name": "part of the series"
+                            },
+                            {
+                                "name": "follows"
+                            },
+                            {
+                                "name": "has edition or translation"
+                            },
+                            {
+                                "name": "replaces"
+                            },
+                            {
+                                "name": "replaced by"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "exhibitions and displays",
+                        "children": [
+                            {
+                                "name": "has works in the collection"
+                            },
+                            {
+                                "name": "exhibition history"
+                            },
+                            {
+                                "name": "archives at"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "science and technology",
+                "children": [
+                    {
+                        "name": "software and computing",
+                        "children": [
+                            {
+                                "name": "programming paradigm"
+                            },
+                            {
+                                "name": "operating system"
+                            },
+                            {
+                                "name": "GUI toolkit or framework"
+                            },
+                            {
+                                "name": "input device"
+                            },
+                            {
+                                "name": "update method"
+                            },
+                            {
+                                "name": "platform"
+                            },
+                            {
+                                "name": "package management system"
+                            },
+                            {
+                                "name": "software engine"
+                            },
+                            {
+                                "name": "writable file format"
+                            },
+                            {
+                                "name": "readable file format"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "hardware and devices",
+                        "children": [
+                            {
+                                "name": "electrical plug type"
+                            },
+                            {
+                                "name": "approved by"
+                            },
+                            {
+                                "name": "connector"
+                            },
+                            {
+                                "name": "powered by"
+                            },
+                            {
+                                "name": "ammunition"
+                            },
+                            {
+                                "name": "fabrication method"
+                            },
+                            {
+                                "name": "armament"
+                            },
+                            {
+                                "name": "manufacturer"
+                            },
+                            {
+                                "name": "CPU"
+                            },
+                            {
+                                "name": "uses"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "scientific classification and taxonomy",
+                        "children": [
+                            {
+                                "name": "writing system"
+                            },
+                            {
+                                "name": "this zoological name is coordinate with"
+                            },
+                            {
+                                "name": "found in taxon"
+                            },
+                            {
+                                "name": "has fruit type"
+                            },
+                            {
+                                "name": "code of nomenclature"
+                            },
+                            {
+                                "name": "linguistic typology"
+                            },
+                            {
+                                "name": "animal breed"
+                            },
+                            {
+                                "name": "natural product of taxon"
+                            },
+                            {
+                                "name": "parent taxon"
+                            },
+                            {
+                                "name": "species kept"
+                            },
+                            {
+                                "name": "points classification"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "medicine and healthcare",
+                        "children": [
+                            {
+                                "name": "possible treatment"
+                            },
+                            {
+                                "name": "significant drug interaction"
+                            },
+                            {
+                                "name": "drug or therapy used for treatment"
+                            },
+                            {
+                                "name": "medical condition treated"
+                            },
+                            {
+                                "name": "therapeutic area"
+                            },
+                            {
+                                "name": "cause of death"
+                            },
+                            {
+                                "name": "medical condition"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "natural sciences",
+                        "children": [
+                            {
+                                "name": "field of this occupation"
+                            },
+                            {
+                                "name": "temporal range start"
+                            },
+                            {
+                                "name": "time period"
+                            },
+                            {
+                                "name": "health specialty"
+                            },
+                            {
+                                "name": "domain of saint or deity"
+                            },
+                            {
+                                "name": "significant event"
+                            },
+                            {
+                                "name": "studied in"
+                            },
+                            {
+                                "name": "physically interacts with"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "astronomy and space",
+                        "children": [
+                            {
+                                "name": "launch contractor"
+                            },
+                            {
+                                "name": "spacecraft bus"
+                            },
+                            {
+                                "name": "docking port"
+                            },
+                            {
+                                "name": "parent astronomical body"
+                            },
+                            {
+                                "name": "child astronomical body"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "discoveries and inventions",
+                        "children": [
+                            {
+                                "name": "discoverer or inventor"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "fields and practitioners",
+                        "children": [
+                            {
+                                "name": "practiced by"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "events and history",
+                "children": [
+                    {
+                        "name": "participation and involvement",
+                        "children": [
+                            {
+                                "name": "organizer"
+                            },
+                            {
+                                "name": "movement"
+                            },
+                            {
+                                "name": "conflict"
+                            },
+                            {
+                                "name": "participant"
+                            },
+                            {
+                                "name": "victory"
+                            },
+                            {
+                                "name": "participating team"
+                            },
+                            {
+                                "name": "significant event"
+                            },
+                            {
+                                "name": "participant in"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "time periods and eras",
+                        "children": [
+                            {
+                                "name": "set in period"
+                            },
+                            {
+                                "name": "historical region"
+                            },
+                            {
+                                "name": "temporal range start"
+                            },
+                            {
+                                "name": "time period"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "awards and honors",
+                        "children": [
+                            {
+                                "name": "notable work"
+                            },
+                            {
+                                "name": "canonization status"
+                            },
+                            {
+                                "name": "public holiday"
+                            },
+                            {
+                                "name": "heritage designation"
+                            },
+                            {
+                                "name": "victory"
+                            },
+                            {
+                                "name": "nominated for"
+                            },
+                            {
+                                "name": "anthem"
+                            },
+                            {
+                                "name": "title of chess person"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "results and rankings",
+                        "children": [
+                            {
+                                "name": "winner"
+                            },
+                            {
+                                "name": "general classification of race participants"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "equipment and vehicles involved",
+                        "children": [
+                            {
+                                "name": "vessel"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "law, governance, and jurisdiction",
+                "children": [
+                    {
+                        "name": "legal and jurisdictional concepts",
+                        "children": [
+                            {
+                                "name": "legal form"
+                            },
+                            {
+                                "name": "licensed to broadcast to"
+                            },
+                            {
+                                "name": "country of origin"
+                            },
+                            {
+                                "name": "applies to jurisdiction"
+                            },
+                            {
+                                "name": "basic form of government"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "government and authority",
+                        "children": [
+                            {
+                                "name": "political alignment"
+                            },
+                            {
+                                "name": "member of political party"
+                            },
+                            {
+                                "name": "allegiance"
+                            },
+                            {
+                                "name": "political ideology"
+                            },
+                            {
+                                "name": "officeholder"
+                            },
+                            {
+                                "name": "official religion"
+                            },
+                            {
+                                "name": "position held"
+                            },
+                            {
+                                "name": "military branch"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "regulations and standards",
+                        "children": [
+                            {
+                                "name": "competition class"
+                            },
+                            {
+                                "name": "copyright status"
+                            },
+                            {
+                                "name": "ESRB rating"
+                            },
+                            {
+                                "name": "approved by"
+                            },
+                            {
+                                "name": "copyright representative"
+                            },
+                            {
+                                "name": "code of nomenclature"
+                            },
+                            {
+                                "name": "product certification"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "public services",
+                        "children": [
+                            {
+                                "name": "emergency phone number"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "legal documents and decisions",
+                        "children": [
+                            {
+                                "name": "majority opinion by"
+                            },
+                            {
+                                "name": "signatory"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "financial and economic attributes",
+                "children": [
+                    {
+                        "name": "business and commerce",
+                        "children": [
+                            {
+                                "name": "brand"
+                            },
+                            {
+                                "name": "reward program"
+                            },
+                            {
+                                "name": "industry"
+                            },
+                            {
+                                "name": "currency symbol description"
+                            },
+                            {
+                                "name": "currency"
+                            },
+                            {
+                                "name": "manufacturer"
+                            },
+                            {
+                                "name": "stock exchange"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ownership and assets",
+                        "children": [
+                            {
+                                "name": "owned by"
+                            },
+                            {
+                                "name": "parent organization"
+                            },
+                            {
+                                "name": "owner of"
+                            },
+                            {
+                                "name": "powered by"
+                            },
+                            {
+                                "name": "manufacturer"
+                            },
+                            {
+                                "name": "has subsidiary"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "trade and distribution",
+                        "children": [
+                            {
+                                "name": "distributed by"
+                            },
+                            {
+                                "name": "shipping port"
+                            },
+                            {
+                                "name": "distribution format"
+                            },
+                            {
+                                "name": "published in"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "physical characteristics and attributes",
+                "children": [
+                    {
+                        "name": "physical attributes",
+                        "children": [
+                            {
+                                "name": "drainage basin"
+                            },
+                            {
+                                "name": "color"
+                            },
+                            {
+                                "name": "mount"
+                            },
+                            {
+                                "name": "mountain range"
+                            },
+                            {
+                                "name": "architectural style"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "specifications and features",
+                        "children": [
+                            {
+                                "name": "input device"
+                            },
+                            {
+                                "name": "operating system"
+                            },
+                            {
+                                "name": "space launch vehicle"
+                            },
+                            {
+                                "name": "connector"
+                            },
+                            {
+                                "name": "software engine"
+                            },
+                            {
+                                "name": "update method"
+                            },
+                            {
+                                "name": "CPU"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "other relation",
+                "children": [
+                    {
+                        "name": "miscellaneous",
+                        "children": [
+                            {
+                                "name": "sports discipline competed in"
+                            },
+                            {
+                                "name": "notable work"
+                            },
+                            {
+                                "name": "constellation"
+                            },
+                            {
+                                "name": "heritage designation"
+                            },
+                            {
+                                "name": "game mode"
+                            },
+                            {
+                                "name": "religious order"
+                            },
+                            {
+                                "name": "significant person"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "opposites and contrasts",
+                        "children": [
+                            {
+                                "name": "opposite of"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "referencing and documentation",
+                        "children": [
+                            {
+                                "name": "described by source"
+                            },
+                            {
+                                "name": "model item"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "grouping and enumerations",
+                        "children": [
+                            {
+                                "name": "is a list of"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "abstract and conceptual relation",
+                        "children": [
+                            {
+                                "name": "manifestation of"
+                            },
+                            {
+                                "name": "subclass of"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "naming and etymology",
+                        "children": [
+                            {
+                                "name": "named after"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "part-whole relation",
+                        "children": [
+                            {
+                                "name": "part of"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "similarity and equivalence",
+                        "children": [
+                            {
+                                "name": "said to be the same as"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "roles and functions",
+                        "children": [
+                            {
+                                "name": "subject has role"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

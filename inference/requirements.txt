@@ -1,0 +1,7 @@
+deepspeed==0.14.4
+transformers>=4.41.2,<=4.45.2
+datasets>=2.16.0,<=2.21.0
+# vllm==0.6.6
+vllm==0.7.0
+tqdm
+scikit-learn

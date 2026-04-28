@@ -1,0 +1,8 @@
+/__pycache__
+/data
+/results
+/pretrained_models
+/saves
+/results
+tmp*
+/.mypy_cache
