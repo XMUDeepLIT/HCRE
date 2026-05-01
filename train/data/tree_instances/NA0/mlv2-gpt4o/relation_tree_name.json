@@ -1,0 +1,2775 @@
+[
+ {
+  "name": "no valid relation"
+ },
+ {
+  "name": "valid relations",
+  "children": [
+   {
+    "name": "politics",
+    "children": [
+     {
+      "name": "person-political party",
+      "children": [
+       {
+        "name": "member of political party"
+       }
+      ]
+     },
+     {
+      "name": "person-position",
+      "children": [
+       {
+        "name": "position held"
+       },
+       {
+        "name": "officeholder"
+       },
+       {
+        "name": "signatory"
+       },
+       {
+        "name": "chairperson"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "chairperson"
+       },
+       {
+        "name": "signatory"
+       },
+       {
+        "name": "allegiance"
+       }
+      ]
+     },
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "replaces"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "significant person"
+       }
+      ]
+     },
+     {
+      "name": "person-event",
+      "children": [
+       {
+        "name": "majority opinion by"
+       },
+       {
+        "name": "victory"
+       },
+       {
+        "name": "conflict"
+       }
+      ]
+     },
+     {
+      "name": "organization-political ideology",
+      "children": [
+       {
+        "name": "political alignment"
+       },
+       {
+        "name": "political ideology"
+       }
+      ]
+     },
+     {
+      "name": "organization-organization",
+      "children": [
+       {
+        "name": "organization directed by the office or position"
+       },
+       {
+        "name": "signatory"
+       }
+      ]
+     },
+     {
+      "name": "location-location",
+      "children": [
+       {
+        "name": "country"
+       },
+       {
+        "name": "capital"
+       },
+       {
+        "name": "contains the administrative territorial entity"
+       },
+       {
+        "name": "twinned administrative body"
+       },
+       {
+        "name": "located in the administrative territorial entity"
+       },
+       {
+        "name": "territory claimed by"
+       }
+      ]
+     },
+     {
+      "name": "location-organization",
+      "children": [
+       {
+        "name": "applies to jurisdiction"
+       },
+       {
+        "name": "basic form of government"
+       },
+       {
+        "name": "anthem"
+       }
+      ]
+     },
+     {
+      "name": "location-religion",
+      "children": [
+       {
+        "name": "official religion"
+       }
+      ]
+     },
+     {
+      "name": "item-item",
+      "children": [
+       {
+        "name": "followed by"
+       },
+       {
+        "name": "opposite of"
+       },
+       {
+        "name": "approved by"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "follows"
+       },
+       {
+        "name": "replaces"
+       },
+       {
+        "name": "armament"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "item-time period",
+      "children": [
+       {
+        "name": "time period"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "finance",
+    "children": [
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "owned by"
+       },
+       {
+        "name": "owner of"
+       }
+      ]
+     },
+     {
+      "name": "organization-organization",
+      "children": [
+       {
+        "name": "owned by"
+       },
+       {
+        "name": "owner of"
+       },
+       {
+        "name": "has subsidiary"
+       }
+      ]
+     },
+     {
+      "name": "organization-attribute",
+      "children": [
+       {
+        "name": "brand"
+       },
+       {
+        "name": "legal form"
+       }
+      ]
+     },
+     {
+      "name": "organization-financial",
+      "children": [
+       {
+        "name": "stock exchange"
+       },
+       {
+        "name": "currency"
+       }
+      ]
+     },
+     {
+      "name": "organization-program",
+      "children": [
+       {
+        "name": "reward program"
+       }
+      ]
+     },
+     {
+      "name": "currency-attribute",
+      "children": [
+       {
+        "name": "currency symbol description"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "healthcare",
+    "children": [
+     {
+      "name": "person-occupation",
+      "children": [
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "practiced by"
+       }
+      ]
+     },
+     {
+      "name": "person-medicalcondition",
+      "children": [
+       {
+        "name": "medical condition"
+       },
+       {
+        "name": "cause of death"
+       }
+      ]
+     },
+     {
+      "name": "person-contactinfo",
+      "children": [
+       {
+        "name": "emergency phone number"
+       }
+      ]
+     },
+     {
+      "name": "person-field",
+      "children": [
+       {
+        "name": "practiced by"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "organization-productservice",
+      "children": [
+       {
+        "name": "product or material produced or service provided"
+       }
+      ]
+     },
+     {
+      "name": "organization-field",
+      "children": [
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "medicalcondition-treatment",
+      "children": [
+       {
+        "name": "medical condition treated"
+       },
+       {
+        "name": "drug or therapy used for treatment"
+       },
+       {
+        "name": "possible treatment"
+       }
+      ]
+     },
+     {
+      "name": "medicalcondition-druginteraction",
+      "children": [
+       {
+        "name": "significant drug interaction"
+       }
+      ]
+     },
+     {
+      "name": "medicalcondition-therapeuticarea",
+      "children": [
+       {
+        "name": "health specialty"
+       },
+       {
+        "name": "therapeutic area"
+       },
+       {
+        "name": "medical condition"
+       }
+      ]
+     },
+     {
+      "name": "entity-usage",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "has use"
+       }
+      ]
+     },
+     {
+      "name": "taxon-naturalproduct",
+      "children": [
+       {
+        "name": "natural product of taxon"
+       }
+      ]
+     },
+     {
+      "name": "entity-partwhole",
+      "children": [
+       {
+        "name": "has part(s) of the class"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "creative works",
+    "children": [
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "named after"
+       },
+       {
+        "name": "sidekick of"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "significant person"
+       },
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "copyright representative"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "nominated for"
+       }
+      ]
+     },
+     {
+      "name": "person-creativework",
+      "children": [
+       {
+        "name": "publisher"
+       },
+       {
+        "name": "nominated for"
+       },
+       {
+        "name": "creator"
+       },
+       {
+        "name": "author"
+       },
+       {
+        "name": "screenwriter"
+       },
+       {
+        "name": "notable work"
+       },
+       {
+        "name": "performer"
+       },
+       {
+        "name": "after a work by"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "voice actor"
+       },
+       {
+        "name": "animator"
+       },
+       {
+        "name": "developer"
+       },
+       {
+        "name": "director"
+       },
+       {
+        "name": "lyrics by"
+       },
+       {
+        "name": "inspired by"
+       },
+       {
+        "name": "producer"
+       },
+       {
+        "name": "contributor to the creative work or subject"
+       },
+       {
+        "name": "composer"
+       },
+       {
+        "name": "cast member"
+       },
+       {
+        "name": "has works in the collection"
+       },
+       {
+        "name": "executive producer"
+       }
+      ]
+     },
+     {
+      "name": "organization-creativework",
+      "children": [
+       {
+        "name": "publisher"
+       },
+       {
+        "name": "nominated for"
+       },
+       {
+        "name": "production company"
+       },
+       {
+        "name": "distribution format"
+       },
+       {
+        "name": "record label"
+       },
+       {
+        "name": "has works in the collection"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "original broadcaster"
+       },
+       {
+        "name": "distributed by"
+       },
+       {
+        "name": "contributor to the creative work or subject"
+       },
+       {
+        "name": "developer"
+       }
+      ]
+     },
+     {
+      "name": "creativework-creativework",
+      "children": [
+       {
+        "name": "opposite of"
+       },
+       {
+        "name": "edition or translation of"
+       },
+       {
+        "name": "is a list of"
+       },
+       {
+        "name": "tracklist"
+       },
+       {
+        "name": "approved by"
+       },
+       {
+        "name": "has edition or translation"
+       },
+       {
+        "name": "follows"
+       },
+       {
+        "name": "described by source"
+       },
+       {
+        "name": "part of the series"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "cites work"
+       },
+       {
+        "name": "inspired by"
+       },
+       {
+        "name": "followed by"
+       },
+       {
+        "name": "published in"
+       },
+       {
+        "name": "based on"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "creativework-location",
+      "children": [
+       {
+        "name": "exhibition history"
+       },
+       {
+        "name": "country of origin"
+       },
+       {
+        "name": "location of creation"
+       },
+       {
+        "name": "recorded at studio or venue"
+       },
+       {
+        "name": "filming location"
+       },
+       {
+        "name": "narrative location"
+       },
+       {
+        "name": "inspired by"
+       },
+       {
+        "name": "place of publication"
+       }
+      ]
+     },
+     {
+      "name": "creativework-concept",
+      "children": [
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "main subject"
+       },
+       {
+        "name": "genre"
+       },
+       {
+        "name": "model item"
+       },
+       {
+        "name": "political ideology"
+       },
+       {
+        "name": "copyright status"
+       },
+       {
+        "name": "movement"
+       },
+       {
+        "name": "writing system"
+       },
+       {
+        "name": "color"
+       },
+       {
+        "name": "ESRB rating"
+       },
+       {
+        "name": "game mode"
+       },
+       {
+        "name": "manifestation of"
+       }
+      ]
+     },
+     {
+      "name": "creativework-timeperiod",
+      "children": [
+       {
+        "name": "set in period"
+       },
+       {
+        "name": "time period"
+       }
+      ]
+     },
+     {
+      "name": "creativework-fictionalentity",
+      "children": [
+       {
+        "name": "from narrative universe"
+       },
+       {
+        "name": "characters"
+       },
+       {
+        "name": "fictional universe described in"
+       },
+       {
+        "name": "takes place in fictional universe"
+       },
+       {
+        "name": "enemy"
+       },
+       {
+        "name": "inspired by"
+       },
+       {
+        "name": "present in work"
+       },
+       {
+        "name": "depicts"
+       }
+      ]
+     },
+     {
+      "name": "organization-location",
+      "children": [
+       {
+        "name": "country of origin"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "organizer"
+       }
+      ]
+     },
+     {
+      "name": "person-concept",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "political ideology"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "movement"
+       },
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "practiced by"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "creativework-object",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "platform"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "has part(s) of the class"
+       },
+       {
+        "name": "fabrication method"
+       },
+       {
+        "name": "instrument"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "technology",
+    "children": [
+     {
+      "name": "person-profession",
+      "children": [
+       {
+        "name": "operator"
+       },
+       {
+        "name": "practiced by"
+       },
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "website account on"
+       }
+      ]
+     },
+     {
+      "name": "person-object",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "discoverer or inventor"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "item operated"
+       },
+       {
+        "name": "developer"
+       },
+       {
+        "name": "website account on"
+       }
+      ]
+     },
+     {
+      "name": "organization-product",
+      "children": [
+       {
+        "name": "product or material produced or service provided"
+       },
+       {
+        "name": "manufacturer"
+       },
+       {
+        "name": "developer"
+       },
+       {
+        "name": "item operated"
+       }
+      ]
+     },
+     {
+      "name": "object-object",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "connector"
+       },
+       {
+        "name": "model item"
+       },
+       {
+        "name": "powered by"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "ammunition"
+       },
+       {
+        "name": "product certification"
+       },
+       {
+        "name": "connects with"
+       },
+       {
+        "name": "spacecraft bus"
+       },
+       {
+        "name": "introduced feature"
+       },
+       {
+        "name": "CPU"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "has part(s) of the class"
+       },
+       {
+        "name": "game mode"
+       }
+      ]
+     },
+     {
+      "name": "object-location",
+      "children": [
+       {
+        "name": "used by"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "electrical plug type"
+       },
+       {
+        "name": "location of creation"
+       }
+      ]
+     },
+     {
+      "name": "object-process",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "distribution format"
+       },
+       {
+        "name": "programming paradigm"
+       },
+       {
+        "name": "fabrication method"
+       },
+       {
+        "name": "update method"
+       }
+      ]
+     },
+     {
+      "name": "object-software",
+      "children": [
+       {
+        "name": "package management system"
+       },
+       {
+        "name": "software engine"
+       },
+       {
+        "name": "input device"
+       },
+       {
+        "name": "readable file format"
+       },
+       {
+        "name": "writable file format"
+       },
+       {
+        "name": "platform"
+       },
+       {
+        "name": "GUI toolkit or framework"
+       },
+       {
+        "name": "operating system"
+       }
+      ]
+     },
+     {
+      "name": "software-software",
+      "children": [
+       {
+        "name": "platform"
+       }
+      ]
+     },
+     {
+      "name": "software-user",
+      "children": [
+       {
+        "name": "used by"
+       },
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "input device"
+       }
+      ]
+     },
+     {
+      "name": "legal-status",
+      "children": [
+       {
+        "name": "product certification"
+       },
+       {
+        "name": "copyright status"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "transportation",
+    "children": [
+     {
+      "name": "organization-product",
+      "children": [
+       {
+        "name": "product or material produced or service provided"
+       },
+       {
+        "name": "manufacturer"
+       },
+       {
+        "name": "item operated"
+       }
+      ]
+     },
+     {
+      "name": "organization-organization",
+      "children": [
+       {
+        "name": "airline alliance"
+       },
+       {
+        "name": "launch contractor"
+       }
+      ]
+     },
+     {
+      "name": "location-location",
+      "children": [
+       {
+        "name": "scheduled service destination"
+       },
+       {
+        "name": "crosses"
+       },
+       {
+        "name": "highest point"
+       },
+       {
+        "name": "adjacent station"
+       }
+      ]
+     },
+     {
+      "name": "location-event",
+      "children": [
+       {
+        "name": "location of landing"
+       },
+       {
+        "name": "terminus"
+       },
+       {
+        "name": "destination point"
+       },
+       {
+        "name": "start point"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "designed by"
+       }
+      ]
+     },
+     {
+      "name": "person-vehicle",
+      "children": [
+       {
+        "name": "member of the crew of"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "mount"
+       },
+       {
+        "name": "item operated"
+       },
+       {
+        "name": "vessel"
+       }
+      ]
+     },
+     {
+      "name": "location-infrastructure",
+      "children": [
+       {
+        "name": "place served by transport hub"
+       },
+       {
+        "name": "terminus"
+       },
+       {
+        "name": "shipping port"
+       },
+       {
+        "name": "connecting service"
+       },
+       {
+        "name": "scheduled service destination"
+       },
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "airline hub"
+       },
+       {
+        "name": "crosses"
+       },
+       {
+        "name": "transport network"
+       }
+      ]
+     },
+     {
+      "name": "vehicle-vehicle",
+      "children": [
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "docking port"
+       },
+       {
+        "name": "connects with"
+       },
+       {
+        "name": "vessel"
+       }
+      ]
+     },
+     {
+      "name": "object-object",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "connects with"
+       },
+       {
+        "name": "spacecraft bus"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "color"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "has part(s) of the class"
+       },
+       {
+        "name": "has part(s)"
+       }
+      ]
+     },
+     {
+      "name": "vehicle-technology",
+      "children": [
+       {
+        "name": "powered by"
+       },
+       {
+        "name": "space launch vehicle"
+       },
+       {
+        "name": "spacecraft bus"
+       }
+      ]
+     },
+     {
+      "name": "location-transport",
+      "children": [
+       {
+        "name": "driving side"
+       },
+       {
+        "name": "railway traffic side"
+       }
+      ]
+     },
+     {
+      "name": "location-person",
+      "children": [
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "place served by transport hub"
+       }
+      ]
+     },
+     {
+      "name": "location-vehicle",
+      "children": [
+       {
+        "name": "shipping port"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "geography",
+    "children": [
+     {
+      "name": "person-location",
+      "children": [
+       {
+        "name": "place of birth"
+       },
+       {
+        "name": "place of burial"
+       },
+       {
+        "name": "residence"
+       },
+       {
+        "name": "founded by"
+       },
+       {
+        "name": "work location"
+       },
+       {
+        "name": "country for sport"
+       },
+       {
+        "name": "place of death"
+       },
+       {
+        "name": "significant place"
+       }
+      ]
+     },
+     {
+      "name": "organization-location",
+      "children": [
+       {
+        "name": "operating area"
+       },
+       {
+        "name": "location of formation"
+       },
+       {
+        "name": "work location"
+       },
+       {
+        "name": "headquarters location"
+       },
+       {
+        "name": "significant place"
+       },
+       {
+        "name": "licensed to broadcast to"
+       }
+      ]
+     },
+     {
+      "name": "location-location",
+      "children": [
+       {
+        "name": "mouth of the watercourse"
+       },
+       {
+        "name": "destination point"
+       },
+       {
+        "name": "connects with"
+       },
+       {
+        "name": "capital"
+       },
+       {
+        "name": "contains the administrative territorial entity"
+       },
+       {
+        "name": "twinned administrative body"
+       },
+       {
+        "name": "territory claimed by"
+       },
+       {
+        "name": "said to be the same as"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "parent peak"
+       },
+       {
+        "name": "tributary"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "significant place"
+       },
+       {
+        "name": "continent"
+       },
+       {
+        "name": "located in protected area"
+       },
+       {
+        "name": "historical region"
+       },
+       {
+        "name": "start point"
+       }
+      ]
+     },
+     {
+      "name": "location-physicalfeature",
+      "children": [
+       {
+        "name": "basin country"
+       },
+       {
+        "name": "located in or next to body of water"
+       },
+       {
+        "name": "located in/on physical feature"
+       },
+       {
+        "name": "subclass of"
+       },
+       {
+        "name": "parent peak"
+       },
+       {
+        "name": "highest point"
+       },
+       {
+        "name": "mountain range"
+       },
+       {
+        "name": "crosses"
+       }
+      ]
+     },
+     {
+      "name": "location-event",
+      "children": [
+       {
+        "name": "location of landing"
+       },
+       {
+        "name": "filming location"
+       },
+       {
+        "name": "location"
+       },
+       {
+        "name": "temporal range start"
+       }
+      ]
+     },
+     {
+      "name": "location-climate",
+      "children": [
+       {
+        "name": "located in time zone"
+       },
+       {
+        "name": "color"
+       },
+       {
+        "name": "Köppen climate classification"
+       }
+      ]
+     },
+     {
+      "name": "location-culture",
+      "children": [
+       {
+        "name": "country of origin"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "public holiday"
+       },
+       {
+        "name": "indigenous to"
+       },
+       {
+        "name": "official religion"
+       },
+       {
+        "name": "domain of saint or deity"
+       },
+       {
+        "name": "anthem"
+       },
+       {
+        "name": "narrative location"
+       },
+       {
+        "name": "historical region"
+       }
+      ]
+     },
+     {
+      "name": "location-transport",
+      "children": [
+       {
+        "name": "connects with"
+       },
+       {
+        "name": "place served by transport hub"
+       },
+       {
+        "name": "terminus"
+       },
+       {
+        "name": "shipping port"
+       },
+       {
+        "name": "airline hub"
+       },
+       {
+        "name": "crosses"
+       },
+       {
+        "name": "start point"
+       },
+       {
+        "name": "railway traffic side"
+       }
+      ]
+     },
+     {
+      "name": "location-naturalresource",
+      "children": [
+       {
+        "name": "drainage basin"
+       },
+       {
+        "name": "basin country"
+       },
+       {
+        "name": "indigenous to"
+       }
+      ]
+     },
+     {
+      "name": "astronomicalbody-astronomicalbody",
+      "children": [
+       {
+        "name": "parent astronomical body"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "child astronomical body"
+       }
+      ]
+     },
+     {
+      "name": "location-object",
+      "children": [
+       {
+        "name": "country of origin"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "main building contractor"
+       },
+       {
+        "name": "location of creation"
+       },
+       {
+        "name": "location"
+       },
+       {
+        "name": "recorded at studio or venue"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "has part(s) of the class"
+       },
+       {
+        "name": "is a list of"
+       },
+       {
+        "name": "significant place"
+       },
+       {
+        "name": "electrical plug type"
+       },
+       {
+        "name": "place of publication"
+       }
+      ]
+     },
+     {
+      "name": "location-jurisdiction",
+      "children": [
+       {
+        "name": "country"
+       },
+       {
+        "name": "location"
+       },
+       {
+        "name": "capital"
+       },
+       {
+        "name": "applies to jurisdiction"
+       },
+       {
+        "name": "emergency phone number"
+       },
+       {
+        "name": "driving side"
+       },
+       {
+        "name": "located in the administrative territorial entity"
+       },
+       {
+        "name": "territory claimed by"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "science",
+    "children": [
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "doctoral advisor"
+       }
+      ]
+     },
+     {
+      "name": "person-field",
+      "children": [
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "studied in"
+       },
+       {
+        "name": "academic degree"
+       },
+       {
+        "name": "practiced by"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "person-work",
+      "children": [
+       {
+        "name": "discoverer or inventor"
+       },
+       {
+        "name": "cites work"
+       },
+       {
+        "name": "notable work"
+       }
+      ]
+     },
+     {
+      "name": "organization-product",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "product or material produced or service provided"
+       },
+       {
+        "name": "used by"
+       }
+      ]
+     },
+     {
+      "name": "taxon-taxon",
+      "children": [
+       {
+        "name": "found in taxon"
+       },
+       {
+        "name": "animal breed"
+       },
+       {
+        "name": "parent taxon"
+       },
+       {
+        "name": "species kept"
+       },
+       {
+        "name": "this zoological name is coordinate with"
+       }
+      ]
+     },
+     {
+      "name": "taxon-location",
+      "children": [
+       {
+        "name": "indigenous to"
+       }
+      ]
+     },
+     {
+      "name": "taxon-attribute",
+      "children": [
+       {
+        "name": "code of nomenclature"
+       },
+       {
+        "name": "has fruit type"
+       },
+       {
+        "name": "natural product of taxon"
+       },
+       {
+        "name": "color"
+       },
+       {
+        "name": "temporal range start"
+       }
+      ]
+     },
+     {
+      "name": "object-process",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "space launch vehicle"
+       },
+       {
+        "name": "fabrication method"
+       }
+      ]
+     },
+     {
+      "name": "object-object",
+      "children": [
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "opposite of"
+       },
+       {
+        "name": "model item"
+       },
+       {
+        "name": "child astronomical body"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "subclass of"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "has part(s) of the class"
+       },
+       {
+        "name": "parent astronomical body"
+       },
+       {
+        "name": "is a list of"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "location-attribute",
+      "children": [
+       {
+        "name": "constellation"
+       },
+       {
+        "name": "Köppen climate classification"
+       }
+      ]
+     },
+     {
+      "name": "language-typology",
+      "children": [
+       {
+        "name": "linguistic typology"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "sports",
+    "children": [
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "partner in business or sport"
+       },
+       {
+        "name": "title of chess person"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "head coach"
+       },
+       {
+        "name": "league"
+       },
+       {
+        "name": "member of sports team"
+       }
+      ]
+     },
+     {
+      "name": "person-event",
+      "children": [
+       {
+        "name": "winner"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       },
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "victory"
+       }
+      ]
+     },
+     {
+      "name": "person-country",
+      "children": [
+       {
+        "name": "country for sport"
+       }
+      ]
+     },
+     {
+      "name": "person-field",
+      "children": [
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "organization-location",
+      "children": [
+       {
+        "name": "physically interacts with"
+       },
+       {
+        "name": "home venue"
+       },
+       {
+        "name": "highest point"
+       }
+      ]
+     },
+     {
+      "name": "organization-event",
+      "children": [
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       },
+       {
+        "name": "participating team"
+       }
+      ]
+     },
+     {
+      "name": "organization-organization",
+      "children": [
+       {
+        "name": "league level above"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "league level below"
+       },
+       {
+        "name": "kit supplier"
+       },
+       {
+        "name": "league"
+       }
+      ]
+     },
+     {
+      "name": "event-classification",
+      "children": [
+       {
+        "name": "general classification of race participants"
+       },
+       {
+        "name": "competition class"
+       },
+       {
+        "name": "points classification"
+       },
+       {
+        "name": "is a list of"
+       }
+      ]
+     },
+     {
+      "name": "event-time",
+      "children": [
+       {
+        "name": "time period"
+       }
+      ]
+     },
+     {
+      "name": "event-public",
+      "children": [
+       {
+        "name": "intended public"
+       }
+      ]
+     },
+     {
+      "name": "field-person",
+      "children": [
+       {
+        "name": "practiced by"
+       },
+       {
+        "name": "field of work"
+       },
+       {
+        "name": "sports discipline competed in"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "family and relation",
+    "children": [
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "relative"
+       },
+       {
+        "name": "student of"
+       },
+       {
+        "name": "doctoral advisor"
+       }
+      ]
+     },
+     {
+      "name": "person-location",
+      "children": [
+       {
+        "name": "residence"
+       },
+       {
+        "name": "place of birth"
+       }
+      ]
+     },
+     {
+      "name": "person-role",
+      "children": [
+       {
+        "name": "subject has role"
+       },
+       {
+        "name": "honorific prefix"
+       }
+      ]
+     },
+     {
+      "name": "person-group",
+      "children": [
+       {
+        "name": "gens"
+       },
+       {
+        "name": "family"
+       }
+      ]
+     },
+     {
+      "name": "person-relation",
+      "children": [
+       {
+        "name": "unmarried partner"
+       },
+       {
+        "name": "spouse"
+       }
+      ]
+     },
+     {
+      "name": "person-fictionalcharacter",
+      "children": [
+       {
+        "name": "sidekick of"
+       }
+      ]
+     },
+     {
+      "name": "person-parentchild",
+      "children": [
+       {
+        "name": "father"
+       },
+       {
+        "name": "stepparent"
+       },
+       {
+        "name": "mother"
+       },
+       {
+        "name": "child"
+       }
+      ]
+     },
+     {
+      "name": "person-sibling",
+      "children": [
+       {
+        "name": "sibling"
+       }
+      ]
+     },
+     {
+      "name": "person-significantother",
+      "children": [
+       {
+        "name": "significant person"
+       }
+      ]
+     },
+     {
+      "name": "item-item",
+      "children": [
+       {
+        "name": "opposite of"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "organizations",
+    "children": [
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "publisher"
+       },
+       {
+        "name": "military branch"
+       },
+       {
+        "name": "commander of (DEPRECATED)"
+       },
+       {
+        "name": "founded by"
+       },
+       {
+        "name": "member of"
+       },
+       {
+        "name": "signatory"
+       },
+       {
+        "name": "copyright representative"
+       },
+       {
+        "name": "website account on"
+       },
+       {
+        "name": "conferred by"
+       },
+       {
+        "name": "approved by"
+       },
+       {
+        "name": "commanded by"
+       },
+       {
+        "name": "main building contractor"
+       },
+       {
+        "name": "owner of"
+       },
+       {
+        "name": "educated at"
+       },
+       {
+        "name": "affiliation"
+       },
+       {
+        "name": "religious order"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "developer"
+       },
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "archives at"
+       },
+       {
+        "name": "sponsor"
+       },
+       {
+        "name": "board member"
+       },
+       {
+        "name": "employer"
+       },
+       {
+        "name": "member of political party"
+       },
+       {
+        "name": "has works in the collection"
+       },
+       {
+        "name": "item operated"
+       }
+      ]
+     },
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "named after"
+       },
+       {
+        "name": "significant person"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "partner in business or sport"
+       },
+       {
+        "name": "signatory"
+       },
+       {
+        "name": "designed by"
+       },
+       {
+        "name": "replaces"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "organization-organization",
+      "children": [
+       {
+        "name": "owned by"
+       },
+       {
+        "name": "kit supplier"
+       },
+       {
+        "name": "signatory"
+       },
+       {
+        "name": "conferred by"
+       },
+       {
+        "name": "approved by"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "airline alliance"
+       },
+       {
+        "name": "owner of"
+       },
+       {
+        "name": "affiliation"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "has subsidiary"
+       },
+       {
+        "name": "part of"
+       },
+       {
+        "name": "business division"
+       },
+       {
+        "name": "maintained by"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "launch contractor"
+       },
+       {
+        "name": "parent organization"
+       },
+       {
+        "name": "has part(s)"
+       },
+       {
+        "name": "distributed by"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "organization-location",
+      "children": [
+       {
+        "name": "operating area"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "location of formation"
+       },
+       {
+        "name": "applies to jurisdiction"
+       },
+       {
+        "name": "work location"
+       },
+       {
+        "name": "headquarters location"
+       },
+       {
+        "name": "home venue"
+       },
+       {
+        "name": "airline hub"
+       },
+       {
+        "name": "licensed to broadcast to"
+       }
+      ]
+     },
+     {
+      "name": "person-location",
+      "children": [
+       {
+        "name": "work location"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "founded by"
+       },
+       {
+        "name": "allegiance"
+       }
+      ]
+     },
+     {
+      "name": "organization-product",
+      "children": [
+       {
+        "name": "publisher"
+       },
+       {
+        "name": "used by"
+       },
+       {
+        "name": "manufacturer"
+       },
+       {
+        "name": "uses"
+       },
+       {
+        "name": "kit supplier"
+       },
+       {
+        "name": "production company"
+       },
+       {
+        "name": "brand"
+       },
+       {
+        "name": "record label"
+       },
+       {
+        "name": "product certification"
+       },
+       {
+        "name": "item operated"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "reward program"
+       },
+       {
+        "name": "original broadcaster"
+       },
+       {
+        "name": "distributed by"
+       },
+       {
+        "name": "species kept"
+       },
+       {
+        "name": "developer"
+       },
+       {
+        "name": "product or material produced or service provided"
+       }
+      ]
+     },
+     {
+      "name": "person-event",
+      "children": [
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       },
+       {
+        "name": "nominated for"
+       }
+      ]
+     },
+     {
+      "name": "organization-event",
+      "children": [
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       },
+       {
+        "name": "nominated for"
+       },
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "sponsor"
+       }
+      ]
+     },
+     {
+      "name": "person-role",
+      "children": [
+       {
+        "name": "position held"
+       },
+       {
+        "name": "chief executive officer"
+       },
+       {
+        "name": "director / manager"
+       },
+       {
+        "name": "head coach"
+       },
+       {
+        "name": "member of the crew of"
+       },
+       {
+        "name": "chairperson"
+       },
+       {
+        "name": "operator"
+       },
+       {
+        "name": "executive producer"
+       },
+       {
+        "name": "replaces"
+       },
+       {
+        "name": "subject has role"
+       },
+       {
+        "name": "developer"
+       }
+      ]
+     },
+     {
+      "name": "organization-role",
+      "children": [
+       {
+        "name": "organization directed by the office or position"
+       }
+      ]
+     },
+     {
+      "name": "organization-industry",
+      "children": [
+       {
+        "name": "industry"
+       },
+       {
+        "name": "record label"
+       },
+       {
+        "name": "has use"
+       },
+       {
+        "name": "legal form"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     },
+     {
+      "name": "person-attribute",
+      "children": [
+       {
+        "name": "uses"
+       },
+       {
+        "name": "field of this occupation"
+       },
+       {
+        "name": "political ideology"
+       },
+       {
+        "name": "religion or worldview"
+       },
+       {
+        "name": "academic degree"
+       },
+       {
+        "name": "field of work"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "history and culture",
+    "children": [
+     {
+      "name": "person-person",
+      "children": [
+       {
+        "name": "gens"
+       },
+       {
+        "name": "significant person"
+       },
+       {
+        "name": "student of"
+       },
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "family"
+       }
+      ]
+     },
+     {
+      "name": "person-organization",
+      "children": [
+       {
+        "name": "military branch"
+       },
+       {
+        "name": "officeholder"
+       },
+       {
+        "name": "commanded by"
+       },
+       {
+        "name": "commander of (DEPRECATED)"
+       },
+       {
+        "name": "educated at"
+       },
+       {
+        "name": "founded by"
+       },
+       {
+        "name": "religious order"
+       },
+       {
+        "name": "conferred by"
+       }
+      ]
+     },
+     {
+      "name": "person-location",
+      "children": [
+       {
+        "name": "place of burial"
+       },
+       {
+        "name": "place of death"
+       },
+       {
+        "name": "significant place"
+       },
+       {
+        "name": "founded by"
+       }
+      ]
+     },
+     {
+      "name": "person-event",
+      "children": [
+       {
+        "name": "significant event"
+       },
+       {
+        "name": "winner"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       },
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "conflict"
+       },
+       {
+        "name": "victory"
+       }
+      ]
+     },
+     {
+      "name": "person-concept",
+      "children": [
+       {
+        "name": "canonization status"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "religion or worldview"
+       },
+       {
+        "name": "honorific prefix"
+       },
+       {
+        "name": "domain of saint or deity"
+       },
+       {
+        "name": "cause of death"
+       },
+       {
+        "name": "discoverer or inventor"
+       },
+       {
+        "name": "movement"
+       },
+       {
+        "name": "influenced by"
+       },
+       {
+        "name": "mount"
+       },
+       {
+        "name": "convicted of"
+       },
+       {
+        "name": "armament"
+       },
+       {
+        "name": "subject has role"
+       }
+      ]
+     },
+     {
+      "name": "organization-location",
+      "children": [
+       {
+        "name": "archives at"
+       }
+      ]
+     },
+     {
+      "name": "organization-event",
+      "children": [
+       {
+        "name": "significant event"
+       },
+       {
+        "name": "participant in"
+       },
+       {
+        "name": "organizer"
+       },
+       {
+        "name": "participant"
+       }
+      ]
+     },
+     {
+      "name": "location-location",
+      "children": [
+       {
+        "name": "indigenous to"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "historical region"
+       },
+       {
+        "name": "has part(s)"
+       }
+      ]
+     },
+     {
+      "name": "location-event",
+      "children": [
+       {
+        "name": "significant event"
+       },
+       {
+        "name": "public holiday"
+       }
+      ]
+     },
+     {
+      "name": "event-event",
+      "children": [
+       {
+        "name": "followed by"
+       },
+       {
+        "name": "opposite of"
+       },
+       {
+        "name": "significant event"
+       },
+       {
+        "name": "named after"
+       },
+       {
+        "name": "replaced by"
+       },
+       {
+        "name": "follows"
+       },
+       {
+        "name": "time period"
+       },
+       {
+        "name": "replaces"
+       }
+      ]
+     },
+     {
+      "name": "concept-concept",
+      "children": [
+       {
+        "name": "opposite of"
+       },
+       {
+        "name": "linguistic typology"
+       },
+       {
+        "name": "writing system"
+       },
+       {
+        "name": "subclass of"
+       },
+       {
+        "name": "is a list of"
+       },
+       {
+        "name": "manifestation of"
+       },
+       {
+        "name": "said to be the same as"
+       }
+      ]
+     },
+     {
+      "name": "object-concept",
+      "children": [
+       {
+        "name": "named after"
+       },
+       {
+        "name": "intended public"
+       },
+       {
+        "name": "set in period"
+       },
+       {
+        "name": "architectural style"
+       },
+       {
+        "name": "official religion"
+       },
+       {
+        "name": "anthem"
+       },
+       {
+        "name": "movement"
+       },
+       {
+        "name": "inspired by"
+       },
+       {
+        "name": "depicts"
+       }
+      ]
+     },
+     {
+      "name": "object-location",
+      "children": [
+       {
+        "name": "exhibition history"
+       },
+       {
+        "name": "indigenous to"
+       },
+       {
+        "name": "heritage designation"
+       },
+       {
+        "name": "country of origin"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

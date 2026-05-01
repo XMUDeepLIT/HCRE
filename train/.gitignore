@@ -171,10 +171,10 @@ hf_cache/
 om_cache/
 cache/
 config/
-saves/
 output/
 wandb/
 swanlog/
 generated_predictions.jsonl
-data/
+# data/
+# saves/
 

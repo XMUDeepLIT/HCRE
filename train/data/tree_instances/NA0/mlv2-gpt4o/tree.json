@@ -1,0 +1,973 @@
+{
+  "Politics": {
+    "Person-Political Party": [
+      "member of political party"
+    ],
+    "Person-Position": [
+      "chairperson",
+      "officeholder",
+      "signatory",
+      "position held"
+    ],
+    "Person-Organization": [
+      "signatory",
+      "allegiance",
+      "chairperson"
+    ],
+    "Person-Person": [
+      "replaces",
+      "significant person",
+      "replaced by"
+    ],
+    "Person-Event": [
+      "majority opinion by",
+      "victory",
+      "conflict"
+    ],
+    "Organization-Political Ideology": [
+      "political alignment",
+      "political ideology"
+    ],
+    "Organization-Organization": [
+      "organization directed by the office or position",
+      "signatory"
+    ],
+    "Location-Location": [
+      "country",
+      "capital",
+      "contains the administrative territorial entity",
+      "twinned administrative body",
+      "located in the administrative territorial entity",
+      "territory claimed by"
+    ],
+    "Location-Organization": [
+      "applies to jurisdiction",
+      "basic form of government",
+      "anthem"
+    ],
+    "Location-Religion": [
+      "official religion"
+    ],
+    "Item-Item": [
+      "followed by",
+      "opposite of",
+      "approved by",
+      "replaced by",
+      "follows",
+      "replaces",
+      "armament",
+      "said to be the same as"
+    ],
+    "Item-Time Period": [
+      "time period"
+    ]
+  },
+  "Finance": {
+    "Person-Organization": [
+      "owned by",
+      "owner of"
+    ],
+    "Organization-Organization": [
+      "owned by",
+      "owner of",
+      "has subsidiary"
+    ],
+    "Organization-Attribute": [
+      "brand",
+      "legal form"
+    ],
+    "Organization-Financial": [
+      "stock exchange",
+      "currency"
+    ],
+    "Organization-Program": [
+      "reward program"
+    ],
+    "Currency-Attribute": [
+      "currency symbol description"
+    ]
+  },
+  "Healthcare": {
+    "Person-Occupation": [
+      "field of this occupation",
+      "practiced by"
+    ],
+    "Person-MedicalCondition": [
+      "cause of death",
+      "medical condition"
+    ],
+    "Person-ContactInfo": [
+      "emergency phone number"
+    ],
+    "Person-Field": [
+      "practiced by",
+      "field of work"
+    ],
+    "Organization-ProductService": [
+      "product or material produced or service provided"
+    ],
+    "Organization-Field": [
+      "field of work"
+    ],
+    "MedicalCondition-Treatment": [
+      "medical condition treated",
+      "drug or therapy used for treatment",
+      "possible treatment"
+    ],
+    "MedicalCondition-DrugInteraction": [
+      "significant drug interaction"
+    ],
+    "MedicalCondition-TherapeuticArea": [
+      "health specialty",
+      "therapeutic area",
+      "medical condition"
+    ],
+    "Entity-Usage": [
+      "uses",
+      "physically interacts with",
+      "used by",
+      "intended public",
+      "has use"
+    ],
+    "Taxon-NaturalProduct": [
+      "natural product of taxon"
+    ],
+    "Entity-PartWhole": [
+      "has part(s) of the class"
+    ]
+  },
+  "Creative Works": {
+    "Person-Person": [
+      "named after",
+      "sidekick of",
+      "significant person",
+      "replaced by",
+      "influenced by",
+      "said to be the same as"
+    ],
+    "Person-Organization": [
+      "copyright representative",
+      "named after",
+      "organizer",
+      "nominated for"
+    ],
+    "Person-CreativeWork": [
+      "publisher",
+      "nominated for",
+      "creator",
+      "author",
+      "screenwriter",
+      "notable work",
+      "performer",
+      "after a work by",
+      "designed by",
+      "voice actor",
+      "animator",
+      "developer",
+      "director",
+      "lyrics by",
+      "contributor to the creative work or subject",
+      "producer",
+      "inspired by",
+      "composer",
+      "cast member",
+      "has works in the collection",
+      "executive producer"
+    ],
+    "Organization-CreativeWork": [
+      "publisher",
+      "nominated for",
+      "production company",
+      "distribution format",
+      "record label",
+      "has works in the collection",
+      "designed by",
+      "original broadcaster",
+      "distributed by",
+      "contributor to the creative work or subject",
+      "developer"
+    ],
+    "CreativeWork-CreativeWork": [
+      "opposite of",
+      "edition or translation of",
+      "is a list of",
+      "tracklist",
+      "approved by",
+      "has edition or translation",
+      "follows",
+      "described by source",
+      "part of the series",
+      "part of",
+      "cites work",
+      "inspired by",
+      "followed by",
+      "published in",
+      "based on",
+      "replaced by",
+      "influenced by",
+      "has part(s)",
+      "said to be the same as"
+    ],
+    "CreativeWork-Location": [
+      "exhibition history",
+      "country of origin",
+      "location of creation",
+      "recorded at studio or venue",
+      "filming location",
+      "narrative location",
+      "inspired by",
+      "place of publication"
+    ],
+    "CreativeWork-Concept": [
+      "intended public",
+      "main subject",
+      "genre",
+      "model item",
+      "political ideology",
+      "copyright status",
+      "movement",
+      "writing system",
+      "color",
+      "ESRB rating",
+      "game mode",
+      "manifestation of"
+    ],
+    "CreativeWork-TimePeriod": [
+      "set in period",
+      "time period"
+    ],
+    "CreativeWork-FictionalEntity": [
+      "from narrative universe",
+      "characters",
+      "fictional universe described in",
+      "takes place in fictional universe",
+      "enemy",
+      "inspired by",
+      "present in work",
+      "depicts"
+    ],
+    "Organization-Location": [
+      "country of origin",
+      "has use",
+      "organizer"
+    ],
+    "Person-Concept": [
+      "uses",
+      "field of this occupation",
+      "named after",
+      "political ideology",
+      "has use",
+      "movement",
+      "influenced by",
+      "practiced by",
+      "field of work"
+    ],
+    "CreativeWork-Object": [
+      "uses",
+      "used by",
+      "platform",
+      "fabrication method",
+      "part of",
+      "has part(s) of the class",
+      "instrument"
+    ]
+  },
+  "Technology": {
+    "Person-Profession": [
+      "operator",
+      "practiced by",
+      "field of this occupation",
+      "field of work"
+    ],
+    "Person-Organization": [
+      "maintained by",
+      "operator",
+      "website account on",
+      "designed by"
+    ],
+    "Person-Object": [
+      "uses",
+      "physically interacts with",
+      "intended public",
+      "item operated",
+      "discoverer or inventor",
+      "designed by",
+      "maintained by",
+      "developer",
+      "website account on"
+    ],
+    "Organization-Product": [
+      "product or material produced or service provided",
+      "developer",
+      "manufacturer",
+      "item operated"
+    ],
+    "Object-Object": [
+      "uses",
+      "physically interacts with",
+      "used by",
+      "connector",
+      "model item",
+      "powered by",
+      "has use",
+      "ammunition",
+      "product certification",
+      "connects with",
+      "spacecraft bus",
+      "introduced feature",
+      "CPU",
+      "has part(s)",
+      "has part(s) of the class",
+      "game mode"
+    ],
+    "Object-Location": [
+      "used by",
+      "has use",
+      "electrical plug type",
+      "location of creation"
+    ],
+    "Object-Process": [
+      "uses",
+      "distribution format",
+      "programming paradigm",
+      "fabrication method",
+      "update method"
+    ],
+    "Object-Software": [
+      "package management system",
+      "software engine",
+      "input device",
+      "readable file format",
+      "writable file format",
+      "platform",
+      "GUI toolkit or framework",
+      "operating system"
+    ],
+    "Software-Software": [
+      "platform"
+    ],
+    "Software-User": [
+      "used by",
+      "intended public",
+      "input device"
+    ],
+    "Legal-Status": [
+      "product certification",
+      "copyright status"
+    ]
+  },
+  "Transportation": {
+    "Organization-Product": [
+      "product or material produced or service provided",
+      "manufacturer",
+      "item operated"
+    ],
+    "Organization-Organization": [
+      "airline alliance",
+      "launch contractor"
+    ],
+    "Location-Location": [
+      "scheduled service destination",
+      "crosses",
+      "highest point",
+      "adjacent station"
+    ],
+    "Location-Event": [
+      "location of landing",
+      "terminus",
+      "destination point",
+      "start point"
+    ],
+    "Person-Organization": [
+      "maintained by",
+      "operator",
+      "designed by"
+    ],
+    "Person-Vehicle": [
+      "member of the crew of",
+      "operator",
+      "mount",
+      "item operated",
+      "vessel"
+    ],
+    "Location-Infrastructure": [
+      "place served by transport hub",
+      "scheduled service destination",
+      "terminus",
+      "shipping port",
+      "connecting service",
+      "airline hub",
+      "maintained by",
+      "transport network",
+      "crosses"
+    ],
+    "Vehicle-Vehicle": [
+      "physically interacts with",
+      "docking port",
+      "connects with",
+      "vessel"
+    ],
+    "Object-Object": [
+      "uses",
+      "physically interacts with",
+      "used by",
+      "has use",
+      "connects with",
+      "spacecraft bus",
+      "part of",
+      "color",
+      "designed by",
+      "has part(s) of the class",
+      "has part(s)"
+    ],
+    "Vehicle-Technology": [
+      "powered by",
+      "space launch vehicle",
+      "spacecraft bus"
+    ],
+    "Location-Transport": [
+      "driving side",
+      "railway traffic side"
+    ],
+    "Location-Person": [
+      "intended public",
+      "place served by transport hub"
+    ],
+    "Location-Vehicle": [
+      "shipping port"
+    ]
+  },
+  "Geography": {
+    "Person-Location": [
+      "place of birth",
+      "place of burial",
+      "founded by",
+      "residence",
+      "work location",
+      "country for sport",
+      "place of death",
+      "significant place"
+    ],
+    "Organization-Location": [
+      "operating area",
+      "location of formation",
+      "work location",
+      "headquarters location",
+      "significant place",
+      "licensed to broadcast to"
+    ],
+    "Location-Location": [
+      "historical region",
+      "destination point",
+      "mouth of the watercourse",
+      "connects with",
+      "capital",
+      "contains the administrative territorial entity",
+      "twinned administrative body",
+      "located in protected area",
+      "part of",
+      "parent peak",
+      "tributary",
+      "has part(s)",
+      "significant place",
+      "continent",
+      "territory claimed by",
+      "said to be the same as",
+      "start point"
+    ],
+    "Location-PhysicalFeature": [
+      "basin country",
+      "located in or next to body of water",
+      "located in/on physical feature",
+      "subclass of",
+      "parent peak",
+      "highest point",
+      "mountain range",
+      "crosses"
+    ],
+    "Location-Event": [
+      "location of landing",
+      "filming location",
+      "location",
+      "temporal range start"
+    ],
+    "Location-Climate": [
+      "located in time zone",
+      "color",
+      "Köppen climate classification"
+    ],
+    "Location-Culture": [
+      "country of origin",
+      "named after",
+      "public holiday",
+      "indigenous to",
+      "official religion",
+      "domain of saint or deity",
+      "anthem",
+      "narrative location",
+      "historical region"
+    ],
+    "Location-Transport": [
+      "connects with",
+      "place served by transport hub",
+      "railway traffic side",
+      "terminus",
+      "shipping port",
+      "airline hub",
+      "crosses",
+      "start point"
+    ],
+    "Location-NaturalResource": [
+      "drainage basin",
+      "basin country",
+      "indigenous to"
+    ],
+    "AstronomicalBody-AstronomicalBody": [
+      "parent astronomical body",
+      "part of",
+      "has part(s)",
+      "child astronomical body"
+    ],
+    "Location-Object": [
+      "country of origin",
+      "named after",
+      "main building contractor",
+      "location of creation",
+      "location",
+      "recorded at studio or venue",
+      "has part(s)",
+      "has part(s) of the class",
+      "is a list of",
+      "significant place",
+      "electrical plug type",
+      "place of publication"
+    ],
+    "Location-Jurisdiction": [
+      "country",
+      "location",
+      "capital",
+      "applies to jurisdiction",
+      "emergency phone number",
+      "driving side",
+      "located in the administrative territorial entity",
+      "territory claimed by"
+    ]
+  },
+  "Science": {
+    "Person-Person": [
+      "influenced by",
+      "doctoral advisor"
+    ],
+    "Person-Field": [
+      "field of this occupation",
+      "studied in",
+      "academic degree",
+      "practiced by",
+      "field of work"
+    ],
+    "Person-Work": [
+      "discoverer or inventor",
+      "cites work",
+      "notable work"
+    ],
+    "Organization-Product": [
+      "uses",
+      "product or material produced or service provided",
+      "used by"
+    ],
+    "Taxon-Taxon": [
+      "found in taxon",
+      "animal breed",
+      "parent taxon",
+      "species kept",
+      "this zoological name is coordinate with"
+    ],
+    "Taxon-Location": [
+      "indigenous to"
+    ],
+    "Taxon-Attribute": [
+      "code of nomenclature",
+      "natural product of taxon",
+      "has fruit type",
+      "color",
+      "temporal range start"
+    ],
+    "Object-Process": [
+      "uses",
+      "used by",
+      "space launch vehicle",
+      "fabrication method"
+    ],
+    "Object-Object": [
+      "physically interacts with",
+      "opposite of",
+      "model item",
+      "child astronomical body",
+      "part of",
+      "subclass of",
+      "has part(s)",
+      "has part(s) of the class",
+      "parent astronomical body",
+      "is a list of",
+      "said to be the same as"
+    ],
+    "Location-Attribute": [
+      "constellation",
+      "Köppen climate classification"
+    ],
+    "Language-Typology": [
+      "linguistic typology"
+    ]
+  },
+  "Sports": {
+    "Person-Person": [
+      "physically interacts with",
+      "replaced by",
+      "partner in business or sport",
+      "title of chess person"
+    ],
+    "Person-Organization": [
+      "member of sports team",
+      "physically interacts with",
+      "head coach",
+      "league"
+    ],
+    "Person-Event": [
+      "winner",
+      "organizer",
+      "participant",
+      "participant in",
+      "victory"
+    ],
+    "Person-Country": [
+      "country for sport"
+    ],
+    "Person-Field": [
+      "field of this occupation",
+      "field of work"
+    ],
+    "Organization-Location": [
+      "physically interacts with",
+      "home venue",
+      "highest point"
+    ],
+    "Organization-Event": [
+      "organizer",
+      "participant in",
+      "participant",
+      "participating team"
+    ],
+    "Organization-Organization": [
+      "league level above",
+      "replaced by",
+      "kit supplier",
+      "league level below",
+      "league"
+    ],
+    "Event-Classification": [
+      "general classification of race participants",
+      "competition class",
+      "points classification",
+      "is a list of"
+    ],
+    "Event-Time": [
+      "time period"
+    ],
+    "Event-Public": [
+      "intended public"
+    ],
+    "Field-Person": [
+      "practiced by",
+      "sports discipline competed in",
+      "field of work"
+    ]
+  },
+  "Family and Relationships": {
+    "Person-Person": [
+      "relative",
+      "student of",
+      "doctoral advisor"
+    ],
+    "Person-Location": [
+      "residence",
+      "place of birth"
+    ],
+    "Person-Role": [
+      "subject has role",
+      "honorific prefix"
+    ],
+    "Person-Group": [
+      "gens",
+      "family"
+    ],
+    "Person-Relationship": [
+      "unmarried partner",
+      "spouse"
+    ],
+    "Person-FictionalCharacter": [
+      "sidekick of"
+    ],
+    "Person-ParentChild": [
+      "father",
+      "stepparent",
+      "mother",
+      "child"
+    ],
+    "Person-Sibling": [
+      "sibling"
+    ],
+    "Person-SignificantOther": [
+      "significant person"
+    ],
+    "Item-Item": [
+      "opposite of"
+    ]
+  },
+  "Organizations": {
+    "Person-Organization": [
+      "publisher",
+      "military branch",
+      "commander of (DEPRECATED)",
+      "founded by",
+      "member of",
+      "signatory",
+      "copyright representative",
+      "website account on",
+      "conferred by",
+      "approved by",
+      "commanded by",
+      "main building contractor",
+      "owner of",
+      "educated at",
+      "affiliation",
+      "religious order",
+      "operator",
+      "designed by",
+      "developer",
+      "maintained by",
+      "archives at",
+      "sponsor",
+      "board member",
+      "employer",
+      "member of political party",
+      "has works in the collection",
+      "item operated"
+    ],
+    "Person-Person": [
+      "named after",
+      "replaced by",
+      "partner in business or sport",
+      "significant person",
+      "signatory",
+      "designed by",
+      "replaces",
+      "said to be the same as"
+    ],
+    "Organization-Organization": [
+      "owned by",
+      "kit supplier",
+      "signatory",
+      "conferred by",
+      "approved by",
+      "named after",
+      "airline alliance",
+      "owner of",
+      "affiliation",
+      "operator",
+      "has subsidiary",
+      "part of",
+      "business division",
+      "maintained by",
+      "replaced by",
+      "launch contractor",
+      "parent organization",
+      "has part(s)",
+      "distributed by",
+      "said to be the same as"
+    ],
+    "Organization-Location": [
+      "named after",
+      "operating area",
+      "location of formation",
+      "applies to jurisdiction",
+      "work location",
+      "headquarters location",
+      "home venue",
+      "airline hub",
+      "licensed to broadcast to"
+    ],
+    "Person-Location": [
+      "work location",
+      "named after",
+      "founded by",
+      "allegiance"
+    ],
+    "Organization-Product": [
+      "publisher",
+      "used by",
+      "manufacturer",
+      "uses",
+      "distributed by",
+      "kit supplier",
+      "production company",
+      "brand",
+      "record label",
+      "product certification",
+      "item operated",
+      "has use",
+      "reward program",
+      "original broadcaster",
+      "product or material produced or service provided",
+      "species kept",
+      "developer"
+    ],
+    "Person-Event": [
+      "participant",
+      "organizer",
+      "participant in",
+      "nominated for"
+    ],
+    "Organization-Event": [
+      "organizer",
+      "participant",
+      "nominated for",
+      "participant in",
+      "sponsor"
+    ],
+    "Person-Role": [
+      "position held",
+      "chief executive officer",
+      "director / manager",
+      "head coach",
+      "member of the crew of",
+      "chairperson",
+      "operator",
+      "executive producer",
+      "replaces",
+      "subject has role",
+      "developer"
+    ],
+    "Organization-Role": [
+      "organization directed by the office or position"
+    ],
+    "Organization-Industry": [
+      "industry",
+      "record label",
+      "has use",
+      "legal form",
+      "field of work"
+    ],
+    "Person-Attribute": [
+      "uses",
+      "field of this occupation",
+      "religion or worldview",
+      "political ideology",
+      "academic degree",
+      "field of work"
+    ]
+  },
+  "History and Culture": {
+    "Person-Person": [
+      "significant person",
+      "gens",
+      "student of",
+      "influenced by",
+      "family"
+    ],
+    "Person-Organization": [
+      "military branch",
+      "officeholder",
+      "commanded by",
+      "commander of (DEPRECATED)",
+      "educated at",
+      "founded by",
+      "religious order",
+      "conferred by"
+    ],
+    "Person-Location": [
+      "significant place",
+      "place of death",
+      "place of burial",
+      "founded by"
+    ],
+    "Person-Event": [
+      "significant event",
+      "winner",
+      "organizer",
+      "participant",
+      "participant in",
+      "conflict",
+      "victory"
+    ],
+    "Person-Concept": [
+      "named after",
+      "canonization status",
+      "religion or worldview",
+      "honorific prefix",
+      "domain of saint or deity",
+      "cause of death",
+      "discoverer or inventor",
+      "movement",
+      "influenced by",
+      "mount",
+      "convicted of",
+      "armament",
+      "subject has role"
+    ],
+    "Organization-Location": [
+      "archives at"
+    ],
+    "Organization-Event": [
+      "significant event",
+      "organizer",
+      "participant in",
+      "participant"
+    ],
+    "Location-Location": [
+      "indigenous to",
+      "named after",
+      "historical region",
+      "has part(s)"
+    ],
+    "Location-Event": [
+      "significant event",
+      "public holiday"
+    ],
+    "Event-Event": [
+      "followed by",
+      "opposite of",
+      "significant event",
+      "named after",
+      "replaced by",
+      "follows",
+      "time period",
+      "replaces"
+    ],
+    "Concept-Concept": [
+      "opposite of",
+      "linguistic typology",
+      "writing system",
+      "subclass of",
+      "is a list of",
+      "manifestation of",
+      "said to be the same as"
+    ],
+    "Object-Concept": [
+      "named after",
+      "intended public",
+      "set in period",
+      "architectural style",
+      "official religion",
+      "anthem",
+      "movement",
+      "inspired by",
+      "depicts"
+    ],
+    "Object-Location": [
+      "exhibition history",
+      "indigenous to",
+      "heritage designation",
+      "country of origin"
+    ]
+  }
+}

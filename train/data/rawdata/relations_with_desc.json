@@ -1,0 +1,1387 @@
+[
+    {
+        "rel_id": "n/a",
+        "rel_name": "invalid relation",
+        "rel_desc": "the relation between subject and object is not available or not in the pre-defined relation label set"
+    },
+    {
+        "rel_id": "P1001",
+        "rel_name": "applies to jurisdiction",
+        "rel_desc": "the item (institution, law, public office, public register...) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)"
+    },
+    {
+        "rel_id": "P101",
+        "rel_name": "field of work",
+        "rel_desc": "specialization of a person or organization; see P106 for the occupation"
+    },
+    {
+        "rel_id": "P102",
+        "rel_name": "member of political party",
+        "rel_desc": "the political party of which a person is or has been a member or otherwise affiliated"
+    },
+    {
+        "rel_id": "P1027",
+        "rel_name": "conferred by",
+        "rel_desc": "person or organization who grants an award, certification, grant, or role"
+    },
+    {
+        "rel_id": "P1037",
+        "rel_name": "director / manager",
+        "rel_desc": "person who manages any kind of group"
+    },
+    {
+        "rel_id": "P1038",
+        "rel_name": "relative",
+        "rel_desc": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+    },
+    {
+        "rel_id": "P1050",
+        "rel_name": "medical condition",
+        "rel_desc": "any state relevant to the health of an organism, including diseases and positive conditions"
+    },
+    {
+        "rel_id": "P1056",
+        "rel_name": "product or material produced or service provided",
+        "rel_desc": "material or product produced by an organization, industry, facility, or process"
+    },
+    {
+        "rel_id": "P1066",
+        "rel_name": "student of",
+        "rel_desc": "person who has taught this person"
+    },
+    {
+        "rel_id": "P1071",
+        "rel_name": "location of creation",
+        "rel_desc": "place where the item was conceived or made; where applicable, location of final assembly"
+    },
+    {
+        "rel_id": "P1072",
+        "rel_name": "readable file format",
+        "rel_desc": "file format a program can open and read"
+    },
+    {
+        "rel_id": "P1073",
+        "rel_name": "writable file format",
+        "rel_desc": "file format a program can create and/or write to"
+    },
+    {
+        "rel_id": "P1079",
+        "rel_name": "launch contractor",
+        "rel_desc": "organization contracted to launch the rocket"
+    },
+    {
+        "rel_id": "P108",
+        "rel_name": "employer",
+        "rel_desc": "person or organization for which the subject works or worked"
+    },
+    {
+        "rel_id": "P1080",
+        "rel_name": "from narrative universe",
+        "rel_desc": "subject's fictional entity is in the object narrative. See also P1441 (present in work) and P1445 (fictional universe described in)"
+    },
+    {
+        "rel_id": "P112",
+        "rel_name": "founded by",
+        "rel_desc": "founder or co-founder of this organization, religion or place"
+    },
+    {
+        "rel_id": "P113",
+        "rel_name": "airline hub",
+        "rel_desc": "airport that serves as a hub for an airline"
+    },
+    {
+        "rel_id": "P114",
+        "rel_name": "airline alliance",
+        "rel_desc": "alliance the airline belongs to"
+    },
+    {
+        "rel_id": "P1142",
+        "rel_name": "political ideology",
+        "rel_desc": "political ideology of an organization or person or of a work (such as a newspaper)"
+    },
+    {
+        "rel_id": "P115",
+        "rel_name": "home venue",
+        "rel_desc": "home stadium or venue of a sports team or applicable performing arts organization"
+    },
+    {
+        "rel_id": "P1158",
+        "rel_name": "location of landing",
+        "rel_desc": "location where the craft landed"
+    },
+    {
+        "rel_id": "P118",
+        "rel_name": "league",
+        "rel_desc": "league in which team or player plays or has played in"
+    },
+    {
+        "rel_id": "P119",
+        "rel_name": "place of burial",
+        "rel_desc": "location of grave, resting place, place of ash-scattering, etc. (e.g., town/city or cemetery) for a person or animal. There may be several places: e.g., re-burials, parts of body buried separately."
+    },
+    {
+        "rel_id": "P1192",
+        "rel_name": "connecting service",
+        "rel_desc": "service stopping at a station"
+    },
+    {
+        "rel_id": "P121",
+        "rel_name": "item operated",
+        "rel_desc": "equipment, installation or service operated by the subject"
+    },
+    {
+        "rel_id": "P122",
+        "rel_name": "basic form of government",
+        "rel_desc": "subject's government"
+    },
+    {
+        "rel_id": "P123",
+        "rel_name": "publisher",
+        "rel_desc": "organization or person responsible for publishing books, periodicals, printed music, podcasts, games or software"
+    },
+    {
+        "rel_id": "P126",
+        "rel_name": "maintained by",
+        "rel_desc": "person or organization in charge of keeping the subject (for instance an infrastructure) in functioning order"
+    },
+    {
+        "rel_id": "P127",
+        "rel_name": "owned by",
+        "rel_desc": "owner of the subject"
+    },
+    {
+        "rel_id": "P129",
+        "rel_name": "physically interacts with",
+        "rel_desc": "physical entity that the subject interacts with"
+    },
+    {
+        "rel_id": "P1303",
+        "rel_name": "instrument",
+        "rel_desc": "musical instrument that a person plays or teaches or used in a music occupation"
+    },
+    {
+        "rel_id": "P1308",
+        "rel_name": "officeholder",
+        "rel_desc": "persons who hold and/or held an office or noble title"
+    },
+    {
+        "rel_id": "P131",
+        "rel_name": "located in the administrative territorial entity",
+        "rel_desc": "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity."
+    },
+    {
+        "rel_id": "P1327",
+        "rel_name": "partner in business or sport",
+        "rel_desc": "professional collaborator"
+    },
+    {
+        "rel_id": "P1336",
+        "rel_name": "territory claimed by",
+        "rel_desc": "administrative divisions that claim control of a given area"
+    },
+    {
+        "rel_id": "P1343",
+        "rel_name": "described by source",
+        "rel_desc": "work where this item is described"
+    },
+    {
+        "rel_id": "P1344",
+        "rel_name": "participant in",
+        "rel_desc": "event in which a person or organization was/is a participant; inverse of P710 or P1923"
+    },
+    {
+        "rel_id": "P1346",
+        "rel_name": "winner",
+        "rel_desc": "winner of a competition or similar event, not to be used for awards (instead use \"award received\" (P166) on awardee's item, possibly qualified with \"for work\" (P1686)) or for wars or battles"
+    },
+    {
+        "rel_id": "P135",
+        "rel_name": "movement",
+        "rel_desc": "literary, artistic, scientific or philosophical movement or scene associated with this person or work. For political ideologies use P1142."
+    },
+    {
+        "rel_id": "P136",
+        "rel_name": "genre",
+        "rel_desc": "creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic"
+    },
+    {
+        "rel_id": "P1365",
+        "rel_name": "replaces",
+        "rel_desc": "person, state or item replaced. Use \"structure replaces\" (P1398) for structures. Use \"follows\" (P155) if the previous item was not replaced or predecessor and successor are identical"
+    },
+    {
+        "rel_id": "P1366",
+        "rel_name": "replaced by",
+        "rel_desc": "other person or item which continues the item by replacing it in its role. Use P156 (\"followed by\") if the item is not replaced nor identical, but adds to the series (e.g. books in a series)."
+    },
+    {
+        "rel_id": "P137",
+        "rel_name": "operator",
+        "rel_desc": "person, profession, or organization that operates the equipment, facility, or service"
+    },
+    {
+        "rel_id": "P138",
+        "rel_name": "named after",
+        "rel_desc": "entity or event that inspired the subject's name, or namesake (in at least one language). Qualifier \"applies to name\" (P5168) can be used to indicate which one"
+    },
+    {
+        "rel_id": "P1387",
+        "rel_name": "political alignment",
+        "rel_desc": "political position within the left\u2013right political spectrum"
+    },
+    {
+        "rel_id": "P1389",
+        "rel_name": "product certification",
+        "rel_desc": "certification for a product, qualify with P1001 (\"applies to jurisdiction\") if needed"
+    },
+    {
+        "rel_id": "P1399",
+        "rel_name": "convicted of",
+        "rel_desc": "crime a person was convicted of"
+    },
+    {
+        "rel_id": "P140",
+        "rel_name": "religion or worldview",
+        "rel_desc": "religion of a person, organization or religious building, or associated with this subject"
+    },
+    {
+        "rel_id": "P1408",
+        "rel_name": "licensed to broadcast to",
+        "rel_desc": "place that a radio/TV station is licensed/required to broadcast to"
+    },
+    {
+        "rel_id": "P1411",
+        "rel_name": "nominated for",
+        "rel_desc": "award nomination received by a person, organisation or creative work (inspired from \"award received\" (Property:P166))"
+    },
+    {
+        "rel_id": "P1414",
+        "rel_name": "GUI toolkit or framework",
+        "rel_desc": "framework or toolkit a program uses to display the graphical user interface"
+    },
+    {
+        "rel_id": "P1416",
+        "rel_name": "affiliation",
+        "rel_desc": "organization that a person or organization is affiliated with (not necessarily member of or employed by)"
+    },
+    {
+        "rel_id": "P1427",
+        "rel_name": "start point",
+        "rel_desc": "starting place of this journey, flight, voyage, trek, migration etc."
+    },
+    {
+        "rel_id": "P1431",
+        "rel_name": "executive producer",
+        "rel_desc": "executive producer of a movie or TV show"
+    },
+    {
+        "rel_id": "P1433",
+        "rel_name": "published in",
+        "rel_desc": "larger work that a given work was published in, like a book, journal or music album"
+    },
+    {
+        "rel_id": "P1434",
+        "rel_name": "takes place in fictional universe",
+        "rel_desc": "the subject is a work describing a fictional universe, i.e. whose plot occurs in this universe"
+    },
+    {
+        "rel_id": "P1435",
+        "rel_name": "heritage designation",
+        "rel_desc": "heritage designation of a cultural or natural site"
+    },
+    {
+        "rel_id": "P144",
+        "rel_name": "based on",
+        "rel_desc": "the work(s) used as the basis for subject item"
+    },
+    {
+        "rel_id": "P1441",
+        "rel_name": "present in work",
+        "rel_desc": "this (fictional or fictionalized) entity, place, or person appears in that work as part of the narration (use P2860 for works citing other works, P361/P1433 for works being part of other works, P1343 for entities described in non-fictional accounts)"
+    },
+    {
+        "rel_id": "P1444",
+        "rel_name": "destination point",
+        "rel_desc": "destination for this route (journey, flight, sailing, exploration, migration, etc.)"
+    },
+    {
+        "rel_id": "P1445",
+        "rel_name": "fictional universe described in",
+        "rel_desc": "to link a fictional universe with a work that describes it: <universe> \"described in the work:\" <work>"
+    },
+    {
+        "rel_id": "P1454",
+        "rel_name": "legal form",
+        "rel_desc": "legal form of an entity"
+    },
+    {
+        "rel_id": "P149",
+        "rel_name": "architectural style",
+        "rel_desc": "architectural style of a structure"
+    },
+    {
+        "rel_id": "P150",
+        "rel_name": "contains the administrative territorial entity",
+        "rel_desc": "(list of) direct subdivisions of an administrative territorial entity"
+    },
+    {
+        "rel_id": "P1532",
+        "rel_name": "country for sport",
+        "rel_desc": "country a person or a team represents when playing a sport"
+    },
+    {
+        "rel_id": "P1535",
+        "rel_name": "used by",
+        "rel_desc": "item or concept that makes use of the subject (use sub-properties when appropriate)"
+    },
+    {
+        "rel_id": "P155",
+        "rel_name": "follows",
+        "rel_desc": "immediately prior item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has replaced the preceding item, e.g. political offices, use \"replaces\" (P1365)]"
+    },
+    {
+        "rel_id": "P1557",
+        "rel_name": "manifestation of",
+        "rel_desc": "inherent and characteristic embodiment of a given concept"
+    },
+    {
+        "rel_id": "P156",
+        "rel_name": "followed by",
+        "rel_desc": "immediately following item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has been replaced, e.g. political offices, use \"replaced by\" (P1366)]"
+    },
+    {
+        "rel_id": "P1582",
+        "rel_name": "natural product of taxon",
+        "rel_desc": "links a natural product with its source (animal, plant, fungal, algal, etc.)"
+    },
+    {
+        "rel_id": "P159",
+        "rel_name": "headquarters location",
+        "rel_desc": "city or town, where an organization's headquarters is or has been situated. Use P276 qualifier for specific building"
+    },
+    {
+        "rel_id": "P16",
+        "rel_name": "transport network",
+        "rel_desc": "network the infrastructure is a part of"
+    },
+    {
+        "rel_id": "P161",
+        "rel_name": "cast member",
+        "rel_desc": "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role]"
+    },
+    {
+        "rel_id": "P162",
+        "rel_name": "producer",
+        "rel_desc": "person(s) who produced the film, musical work, theatrical production, etc. (for film, this does not include executive producers, associate producers, etc.) [for production company, use P272, video games - use P178]"
+    },
+    {
+        "rel_id": "P1622",
+        "rel_name": "driving side",
+        "rel_desc": "side of the road that vehicles drive on in a given jurisdiction"
+    },
+    {
+        "rel_id": "P169",
+        "rel_name": "chief executive officer",
+        "rel_desc": "highest-ranking corporate officer appointed as the CEO within an organization"
+    },
+    {
+        "rel_id": "P17",
+        "rel_name": "country",
+        "rel_desc": "sovereign state that this item is in (not to be used for human beings)"
+    },
+    {
+        "rel_id": "P170",
+        "rel_name": "creator",
+        "rel_desc": "maker of this creative work or other object (where no more specific property exists)"
+    },
+    {
+        "rel_id": "P171",
+        "rel_name": "parent taxon",
+        "rel_desc": "closest parent taxon of the taxon in question"
+    },
+    {
+        "rel_id": "P1716",
+        "rel_name": "brand",
+        "rel_desc": "commercial brand associated with the item"
+    },
+    {
+        "rel_id": "P175",
+        "rel_name": "performer",
+        "rel_desc": "actor, musician, band or other performer associated with this role or musical work"
+    },
+    {
+        "rel_id": "P176",
+        "rel_name": "manufacturer",
+        "rel_desc": "(main or final) manufacturer or producer of this product"
+    },
+    {
+        "rel_id": "P177",
+        "rel_name": "crosses",
+        "rel_desc": "obstacle (body of water, road, railway...) which this bridge (ferry, ford) crosses over or this tunnel goes under"
+    },
+    {
+        "rel_id": "P178",
+        "rel_name": "developer",
+        "rel_desc": "organization or person that developed the item"
+    },
+    {
+        "rel_id": "P179",
+        "rel_name": "part of the series",
+        "rel_desc": "series which contains the subject"
+    },
+    {
+        "rel_id": "P180",
+        "rel_name": "depicts",
+        "rel_desc": "entity visually depicted in an image, literarily described in a work, or otherwise incorporated into an audiovisual or other medium; see also P921,  'main subject'"
+    },
+    {
+        "rel_id": "P1830",
+        "rel_name": "owner of",
+        "rel_desc": "entities owned by the subject"
+    },
+    {
+        "rel_id": "P184",
+        "rel_name": "doctoral advisor",
+        "rel_desc": "person who supervised the doctorate or PhD thesis of the subject"
+    },
+    {
+        "rel_id": "P1876",
+        "rel_name": "vessel",
+        "rel_desc": "vessel involved in this mission, navigation or event"
+    },
+    {
+        "rel_id": "P1877",
+        "rel_name": "after a work by",
+        "rel_desc": "artist whose work strongly inspired / was copied in this item"
+    },
+    {
+        "rel_id": "P1891",
+        "rel_name": "signatory",
+        "rel_desc": "person, country, or organization that has signed an official document (use\u00a0P50 for author)"
+    },
+    {
+        "rel_id": "P19",
+        "rel_name": "place of birth",
+        "rel_desc": "most specific known (e.g. city instead of country, or hospital instead of city) birth location of a person, animal or fictional character"
+    },
+    {
+        "rel_id": "P190",
+        "rel_name": "twinned administrative body",
+        "rel_desc": "twin towns, sister cities, twinned municipalities and other localities that have a partnership or cooperative agreement, either legally or informally acknowledged by their governments"
+    },
+    {
+        "rel_id": "P1923",
+        "rel_name": "participating team",
+        "rel_desc": "like 'Participant' (P710) but for teams. For an event like a cycle race or a football match you can use this property to list the teams and P710 to list the individuals (with 'member of sports team' (P54) as a qualifier for the individuals)"
+    },
+    {
+        "rel_id": "P193",
+        "rel_name": "main building contractor",
+        "rel_desc": "the main organization (or person) responsible for construction of this structure or building"
+    },
+    {
+        "rel_id": "P197",
+        "rel_name": "adjacent station",
+        "rel_desc": "the stations next to this station, sharing the same line(s)"
+    },
+    {
+        "rel_id": "P199",
+        "rel_name": "business division",
+        "rel_desc": "organizational divisions of this organization (which are not independent legal entities)"
+    },
+    {
+        "rel_id": "P1990",
+        "rel_name": "species kept",
+        "rel_desc": "taxa, preferably species, present at a zoo, botanical garden, collection, or other institution. NOT specific animals, not for any geographic location"
+    },
+    {
+        "rel_id": "P1995",
+        "rel_name": "health specialty",
+        "rel_desc": "main specialty that diagnoses, prevent human illness, injury and other physical and mental impairments"
+    },
+    {
+        "rel_id": "P20",
+        "rel_name": "place of death",
+        "rel_desc": "most specific known (e.g. city instead of country, or hospital instead of city) death location of a person, animal or fictional character"
+    },
+    {
+        "rel_id": "P205",
+        "rel_name": "basin country",
+        "rel_desc": "country that have drainage to/from or border the body of water"
+    },
+    {
+        "rel_id": "P206",
+        "rel_name": "located in or next to body of water",
+        "rel_desc": "body of water on or next to which a place is located"
+    },
+    {
+        "rel_id": "P2079",
+        "rel_name": "fabrication method",
+        "rel_desc": "method, process or technique used to grow, cook, weave, build, assemble, manufacture the item"
+    },
+    {
+        "rel_id": "P2094",
+        "rel_name": "competition class",
+        "rel_desc": "official classification by a regulating body under which the subject (events, teams, participants, or equipment) qualifies for inclusion"
+    },
+    {
+        "rel_id": "P2175",
+        "rel_name": "medical condition treated",
+        "rel_desc": "disease that this pharmaceutical drug, procedure, or therapy is used to treat"
+    },
+    {
+        "rel_id": "P2176",
+        "rel_name": "drug or therapy used for treatment",
+        "rel_desc": "drug, procedure, or therapy that can be used to treat a medical condition"
+    },
+    {
+        "rel_id": "P22",
+        "rel_name": "father",
+        "rel_desc": "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"
+    },
+    {
+        "rel_id": "P2283",
+        "rel_name": "uses",
+        "rel_desc": "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+    },
+    {
+        "rel_id": "P2321",
+        "rel_name": "general classification of race participants",
+        "rel_desc": "classification of race participants"
+    },
+    {
+        "rel_id": "P2341",
+        "rel_name": "indigenous to",
+        "rel_desc": "place or ethnic group where a language, art genre, cultural tradition or expression, cooking style or food, or biological species or variety is found (or was originally found)"
+    },
+    {
+        "rel_id": "P2348",
+        "rel_name": "time period",
+        "rel_desc": "time period (historic period or era, sports season, theatre season, legislative period etc.) in which the subject occurred"
+    },
+    {
+        "rel_id": "P2360",
+        "rel_name": "intended public",
+        "rel_desc": "this work, product, object or event is intended for, or has been designed to that person or group of people, animals, plants, etc"
+    },
+    {
+        "rel_id": "P2389",
+        "rel_name": "organization directed by the office or position",
+        "rel_desc": "organization which is directed by this office"
+    },
+    {
+        "rel_id": "P2408",
+        "rel_name": "set in period",
+        "rel_desc": "historical, contemporary, or future period, year, century or day the work or genre is set in or event featured in the story of the work"
+    },
+    {
+        "rel_id": "P241",
+        "rel_name": "military branch",
+        "rel_desc": "branch to which this military unit, award, office, or person belongs, e.g. Royal Navy"
+    },
+    {
+        "rel_id": "P2416",
+        "rel_name": "sports discipline competed in",
+        "rel_desc": "discipline an athlete competed in within a sport"
+    },
+    {
+        "rel_id": "P2499",
+        "rel_name": "league level above",
+        "rel_desc": "the league above this sports league"
+    },
+    {
+        "rel_id": "P25",
+        "rel_name": "mother",
+        "rel_desc": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"
+    },
+    {
+        "rel_id": "P2500",
+        "rel_name": "league level below",
+        "rel_desc": "the league below this sports league"
+    },
+    {
+        "rel_id": "P2522",
+        "rel_name": "victory",
+        "rel_desc": "competition or event won by the subject"
+    },
+    {
+        "rel_id": "P2541",
+        "rel_name": "operating area",
+        "rel_desc": "geographic area or jurisdiction an organisation or industry operates in, serves, or has responsibility for"
+    },
+    {
+        "rel_id": "P2546",
+        "rel_name": "sidekick of",
+        "rel_desc": "close companion of a fictional character"
+    },
+    {
+        "rel_id": "P2564",
+        "rel_name": "K\u00f6ppen climate classification",
+        "rel_desc": "indicates the characteristic climate of a place"
+    },
+    {
+        "rel_id": "P2579",
+        "rel_name": "studied in",
+        "rel_desc": "subject is studied by this science or domain"
+    },
+    {
+        "rel_id": "P26",
+        "rel_name": "spouse",
+        "rel_desc": "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"unmarried partner\" (P451) for non-married companions"
+    },
+    {
+        "rel_id": "P264",
+        "rel_name": "record label",
+        "rel_desc": "brand and trademark associated with the marketing of subject music recordings and music videos"
+    },
+    {
+        "rel_id": "P2670",
+        "rel_name": "has part(s) of the class",
+        "rel_desc": "the subject has one or more parts of the object class"
+    },
+    {
+        "rel_id": "P272",
+        "rel_name": "production company",
+        "rel_desc": "company that produced this film, audio or performing arts work"
+    },
+    {
+        "rel_id": "P2743",
+        "rel_name": "this zoological name is coordinate with",
+        "rel_desc": "links coordinate zoological names"
+    },
+    {
+        "rel_id": "P276",
+        "rel_name": "location",
+        "rel_desc": "location of the object, structure or event. In the case of an administrative entity as containing item use P131. For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object"
+    },
+    {
+        "rel_id": "P2789",
+        "rel_name": "connects with",
+        "rel_desc": "item with which the item is physically connected"
+    },
+    {
+        "rel_id": "P279",
+        "rel_name": "subclass of",
+        "rel_desc": "this item is a subclass (subset) of that item; all instances of this item are instances of that item; different from P31 (instance of), e.g.: K2 is an instance of mountain; volcano is a subclass of mountain (and an instance of volcanic landform)"
+    },
+    {
+        "rel_id": "P282",
+        "rel_name": "writing system",
+        "rel_desc": "alphabet, character set or other system of writing used by a language, word, or text, supported by a typeface"
+    },
+    {
+        "rel_id": "P2852",
+        "rel_name": "emergency phone number",
+        "rel_desc": "telephone number to contact emergency services"
+    },
+    {
+        "rel_id": "P2853",
+        "rel_name": "electrical plug type",
+        "rel_desc": "standard plug type for mains electricity in a country"
+    },
+    {
+        "rel_id": "P286",
+        "rel_name": "head coach",
+        "rel_desc": "on-field manager or head coach of a sports club (not to be confused with a general manager P505, which is not a coaching position) or person"
+    },
+    {
+        "rel_id": "P2860",
+        "rel_name": "cites work",
+        "rel_desc": "citation from one creative or scholarly work to another"
+    },
+    {
+        "rel_id": "P2868",
+        "rel_name": "subject has role",
+        "rel_desc": "role/generic identity of the item (\"subject\") in the context of a statement. For the role of the value of the statement (\"object\"), use P3831 (\"object has role\"). For acting roles, use P453 (\"character role\"). For persons, use P39."
+    },
+    {
+        "rel_id": "P287",
+        "rel_name": "designed by",
+        "rel_desc": "person(s) or organization which designed the object"
+    },
+    {
+        "rel_id": "P291",
+        "rel_name": "place of publication",
+        "rel_desc": "geographical place of publication of the edition (use 1st edition when referring to works)"
+    },
+    {
+        "rel_id": "P2925",
+        "rel_name": "domain of saint or deity",
+        "rel_desc": "domain(s) which this saint or deity controls or protects"
+    },
+    {
+        "rel_id": "P2935",
+        "rel_name": "connector",
+        "rel_desc": "connectors which the device has/supports"
+    },
+    {
+        "rel_id": "P2962",
+        "rel_name": "title of chess person",
+        "rel_desc": "title awarded by a chess federation to a person"
+    },
+    {
+        "rel_id": "P30",
+        "rel_name": "continent",
+        "rel_desc": "continent of which the subject is a part"
+    },
+    {
+        "rel_id": "P3018",
+        "rel_name": "located in protected area",
+        "rel_desc": "protected area where a place or geographical feature is physically located"
+    },
+    {
+        "rel_id": "P3033",
+        "rel_name": "package management system",
+        "rel_desc": "package management system used to publish the software"
+    },
+    {
+        "rel_id": "P306",
+        "rel_name": "operating system",
+        "rel_desc": "operating system (OS) on which a software works or the OS installed on hardware"
+    },
+    {
+        "rel_id": "P3075",
+        "rel_name": "official religion",
+        "rel_desc": "official religion in this administrative entity"
+    },
+    {
+        "rel_id": "P3091",
+        "rel_name": "mount",
+        "rel_desc": "creature ridden by the subject, for instance a horse"
+    },
+    {
+        "rel_id": "P3095",
+        "rel_name": "practiced by",
+        "rel_desc": "type of agents that study this subject or work in this field"
+    },
+    {
+        "rel_id": "P3137",
+        "rel_name": "parent peak",
+        "rel_desc": "parent is the peak whose territory this peak resides in, based on the contour of the lowest col"
+    },
+    {
+        "rel_id": "P3320",
+        "rel_name": "board member",
+        "rel_desc": "member(s) of the board for the organization"
+    },
+    {
+        "rel_id": "P3342",
+        "rel_name": "significant person",
+        "rel_desc": "person linked to the item in any possible way"
+    },
+    {
+        "rel_id": "P3373",
+        "rel_name": "sibling",
+        "rel_desc": "the subject and the object have at least one common parent (brother, sister, etc. including half-siblings); use \"relative\" (P1038) for siblings-in-law (brother-in-law, sister-in-law, etc.) and step-siblings (step-brothers, step-sisters, etc.)"
+    },
+    {
+        "rel_id": "P3448",
+        "rel_name": "stepparent",
+        "rel_desc": "subject has the object as their stepparent"
+    },
+    {
+        "rel_id": "P3494",
+        "rel_name": "points classification",
+        "rel_desc": "classification established according to points scored by runners"
+    },
+    {
+        "rel_id": "P355",
+        "rel_name": "has subsidiary",
+        "rel_desc": "subsidiary of a company or organization; generally a fully owned separate corporation. Compare with \"business division\" (P199). Opposite of parent organization (P749)."
+    },
+    {
+        "rel_id": "P36",
+        "rel_name": "capital",
+        "rel_desc": "seat of government of a country, province, state or other type of administrative territorial entity"
+    },
+    {
+        "rel_id": "P360",
+        "rel_name": "is a list of",
+        "rel_desc": "common element between all listed items"
+    },
+    {
+        "rel_id": "P361",
+        "rel_name": "part of",
+        "rel_desc": "object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A), inverse property of \"has part\" (P527, see also \"has parts of the class\" (P2670))"
+    },
+    {
+        "rel_id": "P366",
+        "rel_name": "has use",
+        "rel_desc": "main use of the subject (includes current and former usage)"
+    },
+    {
+        "rel_id": "P375",
+        "rel_name": "space launch vehicle",
+        "rel_desc": "type of rocket or other vehicle for launching subject payload into outer space"
+    },
+    {
+        "rel_id": "P38",
+        "rel_name": "currency",
+        "rel_desc": "currency used by item"
+    },
+    {
+        "rel_id": "P39",
+        "rel_name": "position held",
+        "rel_desc": "subject currently or formerly holds the object position or public office"
+    },
+    {
+        "rel_id": "P3966",
+        "rel_name": "programming paradigm",
+        "rel_desc": "programming paradigm in which a programming language is classified"
+    },
+    {
+        "rel_id": "P397",
+        "rel_name": "parent astronomical body",
+        "rel_desc": "major astronomical body the item belongs to"
+    },
+    {
+        "rel_id": "P398",
+        "rel_name": "child astronomical body",
+        "rel_desc": "minor body that belongs to the item"
+    },
+    {
+        "rel_id": "P40",
+        "rel_name": "child",
+        "rel_desc": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"type of kinship\" (P1039)"
+    },
+    {
+        "rel_id": "P400",
+        "rel_name": "platform",
+        "rel_desc": "platform for which a work was developed or released, or the specific platform version of a software product"
+    },
+    {
+        "rel_id": "P4000",
+        "rel_name": "has fruit type",
+        "rel_desc": "morphology of the fruit of this taxon, as defined in botany"
+    },
+    {
+        "rel_id": "P403",
+        "rel_name": "mouth of the watercourse",
+        "rel_desc": "the body of water to which the watercourse drains"
+    },
+    {
+        "rel_id": "P404",
+        "rel_name": "game mode",
+        "rel_desc": "a video game's available playing mode(s)"
+    },
+    {
+        "rel_id": "P4044",
+        "rel_name": "therapeutic area",
+        "rel_desc": "disease area in which a medical intervention is applied"
+    },
+    {
+        "rel_id": "P408",
+        "rel_name": "software engine",
+        "rel_desc": "software engine employed by the subject item"
+    },
+    {
+        "rel_id": "P411",
+        "rel_name": "canonization status",
+        "rel_desc": "Formal stage in the process of attaining sainthood per the subject's religious organization"
+    },
+    {
+        "rel_id": "P4132",
+        "rel_name": "linguistic typology",
+        "rel_desc": "classification of languages according to their linguistic trait (as opposed to historical families like romance languages)"
+    },
+    {
+        "rel_id": "P414",
+        "rel_name": "stock exchange",
+        "rel_desc": "exchange on which this company is traded"
+    },
+    {
+        "rel_id": "P421",
+        "rel_name": "located in time zone",
+        "rel_desc": "time zone for this item"
+    },
+    {
+        "rel_id": "P425",
+        "rel_name": "field of this occupation",
+        "rel_desc": "field corresponding to this occupation or profession (use only for occupations/professions - for people use Property:P101, for companies use P452)"
+    },
+    {
+        "rel_id": "P437",
+        "rel_name": "distribution format",
+        "rel_desc": "method (or type) of distribution for the subject"
+    },
+    {
+        "rel_id": "P4387",
+        "rel_name": "update method",
+        "rel_desc": "method used by an app/OS to receive updates or self-update"
+    },
+    {
+        "rel_id": "P4446",
+        "rel_name": "reward program",
+        "rel_desc": "reward program associated with the item"
+    },
+    {
+        "rel_id": "P449",
+        "rel_name": "original broadcaster",
+        "rel_desc": "network(s) or service(s) that originally broadcast a radio or television program"
+    },
+    {
+        "rel_id": "P451",
+        "rel_name": "unmarried partner",
+        "rel_desc": "someone with whom the person is in a relationship without being married. Use \"spouse\" (P26) for married couples"
+    },
+    {
+        "rel_id": "P452",
+        "rel_name": "industry",
+        "rel_desc": "specific industry of company or organization"
+    },
+    {
+        "rel_id": "P4552",
+        "rel_name": "mountain range",
+        "rel_desc": "range or subrange to which the geographical item belongs"
+    },
+    {
+        "rel_id": "P460",
+        "rel_name": "said to be the same as",
+        "rel_desc": "this item is said to be the same as that item, though this may be uncertain or disputed"
+    },
+    {
+        "rel_id": "P461",
+        "rel_name": "opposite of",
+        "rel_desc": "item that is in some way the opposite of this item"
+    },
+    {
+        "rel_id": "P4614",
+        "rel_name": "drainage basin",
+        "rel_desc": "area where precipitation collects and drains off into a common outlet, such as into a river, bay, or other body of water"
+    },
+    {
+        "rel_id": "P462",
+        "rel_name": "color",
+        "rel_desc": "color of subject"
+    },
+    {
+        "rel_id": "P463",
+        "rel_name": "member of",
+        "rel_desc": "organization, club or musical group to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a political position, such as a member of parliament (use P39 for that)"
+    },
+    {
+        "rel_id": "P4743",
+        "rel_name": "animal breed",
+        "rel_desc": "subject item belongs to a specific group of domestic animals, generally given by association"
+    },
+    {
+        "rel_id": "P479",
+        "rel_name": "input device",
+        "rel_desc": "input device used to interact with a software or a device"
+    },
+    {
+        "rel_id": "P4791",
+        "rel_name": "commanded by",
+        "rel_desc": "commander of a military unit/army/security service, operation, etc."
+    },
+    {
+        "rel_id": "P483",
+        "rel_name": "recorded at studio or venue",
+        "rel_desc": "studio or location where a musical composition/release was recorded"
+    },
+    {
+        "rel_id": "P485",
+        "rel_name": "archives at",
+        "rel_desc": "the institution holding the subject's archives"
+    },
+    {
+        "rel_id": "P488",
+        "rel_name": "chairperson",
+        "rel_desc": "presiding member of an organization, group or body"
+    },
+    {
+        "rel_id": "P489",
+        "rel_name": "currency symbol description",
+        "rel_desc": "item with description of currency symbol"
+    },
+    {
+        "rel_id": "P495",
+        "rel_name": "country of origin",
+        "rel_desc": "country of origin of this item (creative work, food, phrase, product, etc.)"
+    },
+    {
+        "rel_id": "P50",
+        "rel_name": "author",
+        "rel_desc": "main creator(s) of a written work (use on works, not humans); use P2093 (author name string) when Wikidata item is unknown or does not exist"
+    },
+    {
+        "rel_id": "P5025",
+        "rel_name": "gens",
+        "rel_desc": "a clan or group of families from Ancient Rome who shared the same nomen"
+    },
+    {
+        "rel_id": "P504",
+        "rel_name": "shipping port",
+        "rel_desc": "shipping port of the vessel (if different from \"ship registry\"): For civilian ships, the primary port from which the ship operates. Port of registry \u2192P532 should be listed in \"Ship registry\". For warships, this will be the ship's assigned naval base"
+    },
+    {
+        "rel_id": "P509",
+        "rel_name": "cause of death",
+        "rel_desc": "underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred. Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide"
+    },
+    {
+        "rel_id": "P5096",
+        "rel_name": "member of the crew of",
+        "rel_desc": "person who has been a member of a crew associated with the vessel or spacecraft. For spacecraft, inverse of crew member (P1029), backup or reserve team or crew (P3015)"
+    },
+    {
+        "rel_id": "P511",
+        "rel_name": "honorific prefix",
+        "rel_desc": "word or expression used before a name, in addressing or referring to a person"
+    },
+    {
+        "rel_id": "P512",
+        "rel_name": "academic degree",
+        "rel_desc": "academic degree that the person holds"
+    },
+    {
+        "rel_id": "P516",
+        "rel_name": "powered by",
+        "rel_desc": "equipment or engine used by the subject to convert a source or energy into mechanical energy"
+    },
+    {
+        "rel_id": "P520",
+        "rel_name": "armament",
+        "rel_desc": "equippable weapon item for the subject"
+    },
+    {
+        "rel_id": "P521",
+        "rel_name": "scheduled service destination",
+        "rel_desc": "airport or station connected by regular direct service to the subject; for the destination of a trip see P1444"
+    },
+    {
+        "rel_id": "P523",
+        "rel_name": "temporal range start",
+        "rel_desc": "the start of a process or appearance of a life form or geological unit relative to the geologic time scale"
+    },
+    {
+        "rel_id": "P527",
+        "rel_name": "has part(s)",
+        "rel_desc": "part of this subject; inverse property of \"part of\" (P361). See also \"has parts of the class\" (P2670)."
+    },
+    {
+        "rel_id": "P53",
+        "rel_name": "family",
+        "rel_desc": "family, including dynasty and nobility houses. Not family name (use P734 for family name)."
+    },
+    {
+        "rel_id": "P54",
+        "rel_name": "member of sports team",
+        "rel_desc": "sports teams or clubs that the subject represents or represented"
+    },
+    {
+        "rel_id": "P546",
+        "rel_name": "docking port",
+        "rel_desc": "intended docking port for a spacecraft"
+    },
+    {
+        "rel_id": "P551",
+        "rel_name": "residence",
+        "rel_desc": "the place where the person is or has been, resident"
+    },
+    {
+        "rel_id": "P553",
+        "rel_name": "website account on",
+        "rel_desc": "website that the person or organization has an account on (use with P554) Note: only used with reliable source or if the person or organization disclosed it."
+    },
+    {
+        "rel_id": "P559",
+        "rel_name": "terminus",
+        "rel_desc": "the feature (intersecting road, train station, etc.) at the end of a linear feature"
+    },
+    {
+        "rel_id": "P5658",
+        "rel_name": "railway traffic side",
+        "rel_desc": "indicates for a country or a railway line whether rail traffic usually runs on the left or right hand side"
+    },
+    {
+        "rel_id": "P57",
+        "rel_name": "director",
+        "rel_desc": "director(s) of film, TV-series, stageplay, video game or similar"
+    },
+    {
+        "rel_id": "P58",
+        "rel_name": "screenwriter",
+        "rel_desc": "person(s) who wrote the script for subject item"
+    },
+    {
+        "rel_id": "P5826",
+        "rel_name": "majority opinion by",
+        "rel_desc": "judicial opinion agreed to by more than half of the members of a court"
+    },
+    {
+        "rel_id": "P5869",
+        "rel_name": "model item",
+        "rel_desc": "defines which item is a best practice example of modelling a subject, which is described by the value of this property, usage instructions at Wikidata:Model items"
+    },
+    {
+        "rel_id": "P59",
+        "rel_name": "constellation",
+        "rel_desc": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)"
+    },
+    {
+        "rel_id": "P598",
+        "rel_name": "commander of (DEPRECATED)",
+        "rel_desc": "for persons who are notable as commanding officers, the units they commanded"
+    },
+    {
+        "rel_id": "P5995",
+        "rel_name": "kit supplier",
+        "rel_desc": "official supplier of sports goods to a given sports club, sportsperson or a national sports team"
+    },
+    {
+        "rel_id": "P607",
+        "rel_name": "conflict",
+        "rel_desc": "battles, wars or other military engagements in which the person or item participated"
+    },
+    {
+        "rel_id": "P608",
+        "rel_name": "exhibition history",
+        "rel_desc": "exhibitions where the item is or was displayed"
+    },
+    {
+        "rel_id": "P61",
+        "rel_name": "discoverer or inventor",
+        "rel_desc": "subject who discovered, first described, invented, or developed this discovery or invention or scientific hypothesis or theory"
+    },
+    {
+        "rel_id": "P610",
+        "rel_name": "highest point",
+        "rel_desc": "point with highest elevation in a region, or on the path of a race or route"
+    },
+    {
+        "rel_id": "P611",
+        "rel_name": "religious order",
+        "rel_desc": "order of monks or nuns to which an individual or religious house belongs"
+    },
+    {
+        "rel_id": "P6216",
+        "rel_name": "copyright status",
+        "rel_desc": "copyright status for intellectual creations like works of art, publications, software, etc."
+    },
+    {
+        "rel_id": "P6275",
+        "rel_name": "copyright representative",
+        "rel_desc": "person or organisation who represents the copyright for this person or work of art"
+    },
+    {
+        "rel_id": "P629",
+        "rel_name": "edition or translation of",
+        "rel_desc": "is an edition or translation of this entity"
+    },
+    {
+        "rel_id": "P6379",
+        "rel_name": "has works in the collection",
+        "rel_desc": "collection that has works of this person or organisation (use archives at [P485] for archives)"
+    },
+    {
+        "rel_id": "P658",
+        "rel_name": "tracklist",
+        "rel_desc": "audio tracks contained in this release"
+    },
+    {
+        "rel_id": "P664",
+        "rel_name": "organizer",
+        "rel_desc": "person or institution organizing an event"
+    },
+    {
+        "rel_id": "P674",
+        "rel_name": "characters",
+        "rel_desc": "characters which appear in this item (like plays, operas, operettas, books, comics, films, TV series, video games)"
+    },
+    {
+        "rel_id": "P676",
+        "rel_name": "lyrics by",
+        "rel_desc": "author of song lyrics"
+    },
+    {
+        "rel_id": "P6885",
+        "rel_name": "historical region",
+        "rel_desc": "geographic area which at some point in time had a cultural, ethnic, linguistic or political basis, regardless of present-day borders"
+    },
+    {
+        "rel_id": "P69",
+        "rel_name": "educated at",
+        "rel_desc": "educational institution attended by subject"
+    },
+    {
+        "rel_id": "P6942",
+        "rel_name": "animator",
+        "rel_desc": "person creating animated sequences out of still images"
+    },
+    {
+        "rel_id": "P703",
+        "rel_name": "found in taxon",
+        "rel_desc": "the taxon in which the item can be found"
+    },
+    {
+        "rel_id": "P7047",
+        "rel_name": "enemy",
+        "rel_desc": "opponent character or group of this fictive character or group"
+    },
+    {
+        "rel_id": "P706",
+        "rel_name": "located in/on physical feature",
+        "rel_desc": "located on the specified (geo)physical feature. Should not be used when the value is only political/administrative (P131) or a mountain range (P4552)."
+    },
+    {
+        "rel_id": "P707",
+        "rel_name": "spacecraft bus",
+        "rel_desc": "general model on which multiple-production spacecraft is based"
+    },
+    {
+        "rel_id": "P710",
+        "rel_name": "participant",
+        "rel_desc": "person, group of people or organization (object) that actively takes/took part in an event or process (subject).  Preferably qualify with \"object has role\" (P3831). Use P1923 for participants that are teams."
+    },
+    {
+        "rel_id": "P7153",
+        "rel_name": "significant place",
+        "rel_desc": "significant or notable places associated with the subject"
+    },
+    {
+        "rel_id": "P725",
+        "rel_name": "voice actor",
+        "rel_desc": "performer of a spoken role in a creative work such as animation, video game, radio drama, or dubbing over [use \"character role\" (P453) as qualifier] [use \"cast member\" (P161) for live acting]"
+    },
+    {
+        "rel_id": "P737",
+        "rel_name": "influenced by",
+        "rel_desc": "this person, idea, etc. is informed by that other person, idea, etc., e.g. \u201cHeidegger was influenced by Aristotle\u201d"
+    },
+    {
+        "rel_id": "P739",
+        "rel_name": "ammunition",
+        "rel_desc": "cartridge or other ammunition used by the subject firearm"
+    },
+    {
+        "rel_id": "P740",
+        "rel_name": "location of formation",
+        "rel_desc": "location where a group or organization was formed"
+    },
+    {
+        "rel_id": "P747",
+        "rel_name": "has edition or translation",
+        "rel_desc": "link to an edition of this item"
+    },
+    {
+        "rel_id": "P749",
+        "rel_name": "parent organization",
+        "rel_desc": "parent organization of an organization, opposite of subsidiaries (P355)"
+    },
+    {
+        "rel_id": "P750",
+        "rel_name": "distributed by",
+        "rel_desc": "distributor of a creative work; distributor for a record label; news agency; film distributor"
+    },
+    {
+        "rel_id": "P751",
+        "rel_name": "introduced feature",
+        "rel_desc": "feature introduced by this version of a product item"
+    },
+    {
+        "rel_id": "P767",
+        "rel_name": "contributor to the creative work or subject",
+        "rel_desc": "person or organization that contributed to a subject: co-creator of a creative work or subject"
+    },
+    {
+        "rel_id": "P769",
+        "rel_name": "significant drug interaction",
+        "rel_desc": "clinically significant interaction between two pharmacologically active substances (i.e., drugs and/or active metabolites) where concomitant intake can lead to altered effectiveness or adverse drug events."
+    },
+    {
+        "rel_id": "P790",
+        "rel_name": "approved by",
+        "rel_desc": "item is approved by other item(s) [qualifier: statement is approved by other item(s)]"
+    },
+    {
+        "rel_id": "P793",
+        "rel_name": "significant event",
+        "rel_desc": "significant or notable events associated with the subject"
+    },
+    {
+        "rel_id": "P800",
+        "rel_name": "notable work",
+        "rel_desc": "notable scientific, artistic or literary work, or other work of significance among subject's works"
+    },
+    {
+        "rel_id": "P832",
+        "rel_name": "public holiday",
+        "rel_desc": "official public holiday that occurs in this place in its honor, usually a non-working day"
+    },
+    {
+        "rel_id": "P840",
+        "rel_name": "narrative location",
+        "rel_desc": "the narrative of the work is set in this location"
+    },
+    {
+        "rel_id": "P85",
+        "rel_name": "anthem",
+        "rel_desc": "subject's official anthem"
+    },
+    {
+        "rel_id": "P852",
+        "rel_name": "ESRB rating",
+        "rel_desc": "North American video game content rating"
+    },
+    {
+        "rel_id": "P859",
+        "rel_name": "sponsor",
+        "rel_desc": "organization or individual that sponsors this item"
+    },
+    {
+        "rel_id": "P86",
+        "rel_name": "composer",
+        "rel_desc": "person(s) who wrote the music [for lyricist, use \"lyrics by\" (P676)]"
+    },
+    {
+        "rel_id": "P880",
+        "rel_name": "CPU",
+        "rel_desc": "central processing unit found within the subject item"
+    },
+    {
+        "rel_id": "P915",
+        "rel_name": "filming location",
+        "rel_desc": "actual place where this scene/film was shot. For the setting, use \"narrative location\" (P840)"
+    },
+    {
+        "rel_id": "P921",
+        "rel_name": "main subject",
+        "rel_desc": "primary topic of a work (see also P180: depicts)"
+    },
+    {
+        "rel_id": "P924",
+        "rel_name": "possible treatment",
+        "rel_desc": "health treatment used to resolve or ameliorate a medical condition"
+    },
+    {
+        "rel_id": "P931",
+        "rel_name": "place served by transport hub",
+        "rel_desc": "territorial entity or entities served by this transport hub (airport, train station, etc.)"
+    },
+    {
+        "rel_id": "P937",
+        "rel_name": "work location",
+        "rel_desc": "location where persons or organisations were actively participating in employment, business or other work"
+    },
+    {
+        "rel_id": "P941",
+        "rel_name": "inspired by",
+        "rel_desc": "work, human, place or event which inspired this creative work or fictional entity"
+    },
+    {
+        "rel_id": "P944",
+        "rel_name": "code of nomenclature",
+        "rel_desc": "the code that governs the scientific name of this taxon"
+    },
+    {
+        "rel_id": "P945",
+        "rel_name": "allegiance",
+        "rel_desc": "country (or other power) that the person or group serves"
+    },
+    {
+        "rel_id": "P974",
+        "rel_name": "tributary",
+        "rel_desc": "watercourse that flows into an other one (for lake inflows use P200)"
+    }
+]

@@ -1,0 +1,14 @@
+{
+  "CodRED-dev": {
+    "file_name": "data/cdre_data/CodRED-dev.json"
+  },
+  "CodRED-open_dev": {
+    "file_name": "data/cdre_data/CodRED-open_dev.json"
+  },
+  "multistep-NA0-mlv2-gpt4o-NoPrev-Subbest.suboptimal.double-CodRED-train": {
+    "file_name": "data/cdre_data/multistep/NA0/mlv2-gpt4o-NoPrev-Subbest.suboptimal.double/CodRED-train.json"
+  },
+  "plain-NA0-CodRED-train": {
+    "file_name": "data/cdre_data/plain/NA0/CodRED-train.json"
+  }
+}
